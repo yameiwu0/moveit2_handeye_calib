@@ -1,0 +1,33 @@
+[0.175s] Invoking command in '/home/w/work/moveit2_handeye_calib/build/robot_sdk': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/w/work/moveit2_handeye_calib/build/robot_sdk -- -j28 -l28
+[0.333s] [35m[1mConsolidate compiler generated dependencies of target robot_sdk_lib[0m
+[0.333s] [ 50%] Built target robot_sdk_lib
+[0.333s] [35m[1mConsolidate compiler generated dependencies of target robot_sdk[0m
+[0.333s] [100%] Built target robot_sdk
+[0.342s] Invoked command in '/home/w/work/moveit2_handeye_calib/build/robot_sdk' returned '0': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/w/work/moveit2_handeye_calib/build/robot_sdk -- -j28 -l28
+[0.343s] Invoking command in '/home/w/work/moveit2_handeye_calib/build/robot_sdk': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/w/work/moveit2_handeye_calib/build/robot_sdk
+[0.360s] -- Install configuration: ""
+[0.360s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/lib/robot_sdk/librobot_sdk_lib.so
+[0.361s] -- Set runtime path of "/home/w/work/moveit2_handeye_calib/install/robot_sdk/lib/robot_sdk/librobot_sdk_lib.so" to ""
+[0.361s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/lib/robot_sdk/robot_sdk
+[0.361s] -- Set runtime path of "/home/w/work/moveit2_handeye_calib/install/robot_sdk/lib/robot_sdk/robot_sdk" to ""
+[0.361s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/include/
+[0.361s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/include//robot_sdk.h
+[0.361s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/include//robot_key_controller.h
+[0.361s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/launch
+[0.361s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/launch/robot_sdk.launch.py
+[0.361s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/ament_index/resource_index/package_run_dependencies/robot_sdk
+[0.361s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/ament_index/resource_index/parent_prefix_path/robot_sdk
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/environment/ament_prefix_path.sh
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/environment/ament_prefix_path.dsv
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/environment/path.sh
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/environment/path.dsv
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/local_setup.bash
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/local_setup.sh
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/local_setup.zsh
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/local_setup.dsv
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/package.dsv
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/ament_index/resource_index/packages/robot_sdk
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/cmake/robot_sdkConfig.cmake
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/cmake/robot_sdkConfig-version.cmake
+[0.362s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_sdk/share/robot_sdk/package.xml
+[0.409s] Invoked command in '/home/w/work/moveit2_handeye_calib/build/robot_sdk' returned '0': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/w/work/moveit2_handeye_calib/build/robot_sdk

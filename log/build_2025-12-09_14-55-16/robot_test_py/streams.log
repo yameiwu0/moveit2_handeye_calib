@@ -1,0 +1,44 @@
+[0.657s] Invoking command in '/home/w/work/moveit2_handeye_calib/TG620/robot_test_py': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/build/robot_test_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages:/home/w/work/moveit2_handeye_calib/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_test_py build --build-base /home/w/work/moveit2_handeye_calib/build/robot_test_py/build install --record /home/w/work/moveit2_handeye_calib/build/robot_test_py/install.log --single-version-externally-managed install_data
+[0.805s] running egg_info
+[0.805s] creating ../../build/robot_test_py/robot_test_py.egg-info
+[0.805s] writing ../../build/robot_test_py/robot_test_py.egg-info/PKG-INFO
+[0.805s] writing dependency_links to ../../build/robot_test_py/robot_test_py.egg-info/dependency_links.txt
+[0.805s] writing entry points to ../../build/robot_test_py/robot_test_py.egg-info/entry_points.txt
+[0.805s] writing requirements to ../../build/robot_test_py/robot_test_py.egg-info/requires.txt
+[0.806s] writing top-level names to ../../build/robot_test_py/robot_test_py.egg-info/top_level.txt
+[0.806s] writing manifest file '../../build/robot_test_py/robot_test_py.egg-info/SOURCES.txt'
+[0.807s] reading manifest file '../../build/robot_test_py/robot_test_py.egg-info/SOURCES.txt'
+[0.807s] writing manifest file '../../build/robot_test_py/robot_test_py.egg-info/SOURCES.txt'
+[0.807s] running build
+[0.807s] running build_py
+[0.807s] creating /home/w/work/moveit2_handeye_calib/build/robot_test_py/build
+[0.807s] creating /home/w/work/moveit2_handeye_calib/build/robot_test_py/build/lib
+[0.807s] creating /home/w/work/moveit2_handeye_calib/build/robot_test_py/build/lib/robot_test_py
+[0.807s] copying robot_test_py/__init__.py -> /home/w/work/moveit2_handeye_calib/build/robot_test_py/build/lib/robot_test_py
+[0.807s] copying robot_test_py/robot_test_py2.py -> /home/w/work/moveit2_handeye_calib/build/robot_test_py/build/lib/robot_test_py
+[0.807s] copying robot_test_py/robot_test_py3.py -> /home/w/work/moveit2_handeye_calib/build/robot_test_py/build/lib/robot_test_py
+[0.808s] copying robot_test_py/robot_test_py.py -> /home/w/work/moveit2_handeye_calib/build/robot_test_py/build/lib/robot_test_py
+[0.808s] running install
+[0.808s] running install_lib
+[0.808s] creating /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages/robot_test_py
+[0.808s] copying /home/w/work/moveit2_handeye_calib/build/robot_test_py/build/lib/robot_test_py/__init__.py -> /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages/robot_test_py
+[0.808s] copying /home/w/work/moveit2_handeye_calib/build/robot_test_py/build/lib/robot_test_py/robot_test_py2.py -> /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages/robot_test_py
+[0.808s] copying /home/w/work/moveit2_handeye_calib/build/robot_test_py/build/lib/robot_test_py/robot_test_py3.py -> /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages/robot_test_py
+[0.808s] copying /home/w/work/moveit2_handeye_calib/build/robot_test_py/build/lib/robot_test_py/robot_test_py.py -> /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages/robot_test_py
+[0.809s] byte-compiling /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages/robot_test_py/__init__.py to __init__.cpython-310.pyc
+[0.809s] byte-compiling /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages/robot_test_py/robot_test_py2.py to robot_test_py2.cpython-310.pyc
+[0.809s] byte-compiling /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages/robot_test_py/robot_test_py3.py to robot_test_py3.cpython-310.pyc
+[0.810s] byte-compiling /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages/robot_test_py/robot_test_py.py to robot_test_py.cpython-310.pyc
+[0.810s] running install_data
+[0.810s] creating /home/w/work/moveit2_handeye_calib/install/robot_test_py/share/ament_index
+[0.810s] creating /home/w/work/moveit2_handeye_calib/install/robot_test_py/share/ament_index/resource_index
+[0.810s] creating /home/w/work/moveit2_handeye_calib/install/robot_test_py/share/ament_index/resource_index/packages
+[0.810s] copying resource/robot_test_py -> /home/w/work/moveit2_handeye_calib/install/robot_test_py/share/ament_index/resource_index/packages
+[0.810s] copying package.xml -> /home/w/work/moveit2_handeye_calib/install/robot_test_py/share/robot_test_py
+[0.810s] running install_egg_info
+[0.811s] Copying ../../build/robot_test_py/robot_test_py.egg-info to /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages/robot_test_py-0.0.0-py3.10.egg-info
+[0.812s] running install_scripts
+[0.826s] Installing robot_test_py script to /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/robot_test_py
+[0.826s] Installing robot_test_py2 script to /home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/robot_test_py
+[0.826s] writing list of installed files to '/home/w/work/moveit2_handeye_calib/build/robot_test_py/install.log'
+[0.847s] Invoked command in '/home/w/work/moveit2_handeye_calib/TG620/robot_test_py' returned '0': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/build/robot_test_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w/work/moveit2_handeye_calib/install/robot_test_py/lib/python3.10/site-packages:/home/w/work/moveit2_handeye_calib/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_test_py build --build-base /home/w/work/moveit2_handeye_calib/build/robot_test_py/build install --record /home/w/work/moveit2_handeye_calib/build/robot_test_py/install.log --single-version-externally-managed install_data

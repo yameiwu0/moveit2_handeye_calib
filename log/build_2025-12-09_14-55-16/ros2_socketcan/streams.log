@@ -1,0 +1,127 @@
+[0.007s] Invoking command in '/home/w/work/moveit2_handeye_calib/build/ros2_socketcan': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/w/work/moveit2_handeye_calib/TG620/ros2_socketcan/ros2_socketcan -DCMAKE_INSTALL_PREFIX=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan
+[0.053s] -- The C compiler identification is GNU 11.4.0
+[0.100s] -- The CXX compiler identification is GNU 11.4.0
+[0.106s] -- Detecting C compiler ABI info
+[0.163s] -- Detecting C compiler ABI info - done
+[0.169s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.169s] -- Detecting C compile features
+[0.169s] -- Detecting C compile features - done
+[0.171s] -- Detecting CXX compiler ABI info
+[0.234s] -- Detecting CXX compiler ABI info - done
+[0.239s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.239s] -- Detecting CXX compile features
+[0.240s] -- Detecting CXX compile features - done
+[0.241s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.454s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.630s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.634s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.641s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.652s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.666s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.704s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.706s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.770s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.792s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.826s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.833s] -- Looking for pthread.h
+[0.896s] -- Looking for pthread.h - found
+[0.896s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.963s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.964s] -- Found Threads: TRUE  
+[1.092s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.106s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.109s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/ros2_socketcan` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[1.112s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.113s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.113s] -- Configured cppcheck include dirs: /home/w/work/moveit2_handeye_calib/TG620/ros2_socketcan/ros2_socketcan/include
+[1.113s] -- Configured cppcheck exclude dirs and/or files: 
+[1.114s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.114s] -- Configured cpplint exclude dirs and/or files: 
+[1.114s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.114s] -- Added test 'lint_cmake' to check CMake code style
+[1.115s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.116s] -- Added test 'uncrustify' to check C / C++ code style
+[1.116s] -- Configured uncrustify additional arguments: 
+[1.116s] -- Added test 'xmllint' to check XML markup files
+[1.118s] -- Configuring done
+[1.146s] -- Generating done
+[1.154s] -- Build files have been written to: /home/w/work/moveit2_handeye_calib/build/ros2_socketcan
+[1.171s] Invoked command in '/home/w/work/moveit2_handeye_calib/build/ros2_socketcan' returned '0': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/w/work/moveit2_handeye_calib/TG620/ros2_socketcan/ros2_socketcan -DCMAKE_INSTALL_PREFIX=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan
+[1.173s] Invoking command in '/home/w/work/moveit2_handeye_calib/build/ros2_socketcan': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/w/work/moveit2_handeye_calib/build/ros2_socketcan -- -j28 -l28
+[1.272s] [  4%] [32mBuilding CXX object CMakeFiles/ros2_socketcan.dir/src/socket_can_receiver.cpp.o[0m
+[1.274s] [  9%] [32mBuilding CXX object CMakeFiles/socket_can_receiver_node_exe.dir/rclcpp_components/node_main_socket_can_receiver_node_exe.cpp.o[0m
+[1.274s] [ 14%] [32mBuilding CXX object CMakeFiles/ros2_socketcan.dir/src/socket_can_id.cpp.o[0m
+[1.277s] [ 19%] [32mBuilding CXX object CMakeFiles/ros2_socketcan.dir/src/socket_can_common.cpp.o[0m
+[1.285s] [ 23%] [32mBuilding CXX object CMakeFiles/ros2_socketcan.dir/src/socket_can_sender.cpp.o[0m
+[1.291s] [ 28%] [32mBuilding CXX object CMakeFiles/socket_can_sender_node_exe.dir/rclcpp_components/node_main_socket_can_sender_node_exe.cpp.o[0m
+[1.310s] [ 33%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.324s] [ 38%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.391s] [ 42%] [32m[1mLinking CXX shared library libros2_socketcan.so[0m
+[2.514s] [ 47%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[2.599s] [ 47%] Built target gtest_main
+[2.802s] [ 47%] Built target ros2_socketcan
+[2.841s] [ 52%] [32mBuilding CXX object CMakeFiles/socket_can_receiver_node.dir/src/socket_can_receiver_node.cpp.o[0m
+[4.532s] [ 57%] [32m[1mLinking CXX static library libgtest.a[0m
+[4.598s] [ 57%] Built target gtest
+[4.620s] [ 71%] [32mBuilding CXX object CMakeFiles/ros2_socketcan_test.dir/test/sanity_checks.cpp.o[0m
+[4.620s] [ 71%] [32mBuilding CXX object CMakeFiles/ros2_socketcan_test.dir/test/receiver.cpp.o[0m
+[4.620s] [ 71%] [32mBuilding CXX object CMakeFiles/ros2_socketcan_test.dir/test/gtest_main.cpp.o[0m
+[4.772s] [ 76%] [32m[1mLinking CXX executable socket_can_sender_node_exe[0m
+[4.840s] [ 80%] [32m[1mLinking CXX executable socket_can_receiver_node_exe[0m
+[4.884s] [ 80%] Built target socket_can_sender_node_exe
+[4.942s] [ 80%] Built target socket_can_receiver_node_exe
+[5.721s] [ 85%] [32m[1mLinking CXX executable ros2_socketcan_test[0m
+[5.878s] [ 85%] Built target ros2_socketcan_test
+[6.653s] [ 90%] [32m[1mLinking CXX shared library libsocket_can_receiver_node.so[0m
+[6.809s] [ 90%] Built target socket_can_receiver_node
+[6.826s] [ 95%] [32mBuilding CXX object CMakeFiles/socket_can_sender_node.dir/src/socket_can_sender_node.cpp.o[0m
+[14.032s] [100%] [32m[1mLinking CXX shared library libsocket_can_sender_node.so[0m
+[14.440s] [100%] Built target socket_can_sender_node
+[14.450s] Invoked command in '/home/w/work/moveit2_handeye_calib/build/ros2_socketcan' returned '0': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/w/work/moveit2_handeye_calib/build/ros2_socketcan -- -j28 -l28
+[14.451s] Invoking command in '/home/w/work/moveit2_handeye_calib/build/ros2_socketcan': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/w/work/moveit2_handeye_calib/build/ros2_socketcan
+[14.456s] -- Install configuration: ""
+[14.456s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/lib/ros2_socketcan/socket_can_receiver_node_exe
+[14.456s] -- Set runtime path of "/home/w/work/moveit2_handeye_calib/install/ros2_socketcan/lib/ros2_socketcan/socket_can_receiver_node_exe" to ""
+[14.457s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/lib/ros2_socketcan/socket_can_sender_node_exe
+[14.457s] -- Set runtime path of "/home/w/work/moveit2_handeye_calib/install/ros2_socketcan/lib/ros2_socketcan/socket_can_sender_node_exe" to ""
+[14.457s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/include
+[14.457s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/include/ros2_socketcan
+[14.457s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/include/ros2_socketcan/socket_can_receiver_node.hpp
+[14.457s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/include/ros2_socketcan/socket_can_common.hpp
+[14.457s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/include/ros2_socketcan/socket_can_sender_node.hpp
+[14.457s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/include/ros2_socketcan/socket_can_id.hpp
+[14.457s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/include/ros2_socketcan/visibility_control.hpp
+[14.457s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/include/ros2_socketcan/socket_can_receiver.hpp
+[14.457s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/include/ros2_socketcan/socket_can_sender.hpp
+[14.458s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/environment/library_path.sh
+[14.458s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/environment/library_path.dsv
+[14.458s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/lib/libros2_socketcan.so
+[14.458s] -- Set runtime path of "/home/w/work/moveit2_handeye_calib/install/ros2_socketcan/lib/libros2_socketcan.so" to ""
+[14.458s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/lib/libsocket_can_receiver_node.so
+[14.459s] -- Set runtime path of "/home/w/work/moveit2_handeye_calib/install/ros2_socketcan/lib/libsocket_can_receiver_node.so" to ""
+[14.459s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/lib/libsocket_can_sender_node.so
+[14.465s] -- Set runtime path of "/home/w/work/moveit2_handeye_calib/install/ros2_socketcan/lib/libsocket_can_sender_node.so" to ""
+[14.465s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/launch
+[14.465s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/launch/socket_can_bridge.launch.xml
+[14.465s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/launch/socket_can_receiver.launch.py
+[14.465s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/launch/socket_can_sender.launch.py
+[14.465s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ament_index/resource_index/package_run_dependencies/ros2_socketcan
+[14.465s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ament_index/resource_index/parent_prefix_path/ros2_socketcan
+[14.465s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/environment/ament_prefix_path.sh
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/environment/ament_prefix_path.dsv
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/environment/path.sh
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/environment/path.dsv
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/local_setup.bash
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/local_setup.sh
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/local_setup.zsh
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/local_setup.dsv
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/package.dsv
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ament_index/resource_index/packages/ros2_socketcan
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ament_index/resource_index/rclcpp_components/ros2_socketcan
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/cmake/ament_cmake_export_libraries-extras.cmake
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/cmake/ros2_socketcanConfig.cmake
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/cmake/ros2_socketcanConfig-version.cmake
+[14.466s] -- Installing: /home/w/work/moveit2_handeye_calib/install/ros2_socketcan/share/ros2_socketcan/package.xml
+[14.468s] Invoked command in '/home/w/work/moveit2_handeye_calib/build/ros2_socketcan' returned '0': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble LD_LIBRARY_PATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/w/work/moveit2_handeye_calib/install/ros2_socketcan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/w/work/moveit2_handeye_calib/build/ros2_socketcan

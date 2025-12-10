@@ -1,0 +1,542 @@
+[0mmoveit_calibration_gui: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:58[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   32 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:53[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   32 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:53[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:47[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_frame.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   32 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:53[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:47[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/X3SZ3HJNRA/../../../../../moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/X3SZ3HJNRA/moc_handeye_calibration_display.cpp:10[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   32 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:53[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:47[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_display.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   32 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:53[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:47[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:70[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   32 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:38[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:46[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_display.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::RosTopicComboBox(rclcpp::Node::SharedPtr, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:110:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::node_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  110 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:119:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[KQComboBox[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit RosTopicComboBox(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent[01;35m[K)[m[K
+      |                                                                                                                       [01;35m[K^[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:12:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit [01;35m[KRosTopicComboBox[m[K(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent)
+      |            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K At global scope:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:195:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  195 |   sensor_msgs::msg::CameraInfo::ConstPtr [01;35m[Kcamera_info_[m[K;
+      |                                          [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:7[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:61[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:46[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_display.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:222:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  222 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:46[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/X3SZ3HJNRA/../../../../../moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/X3SZ3HJNRA/moc_handeye_calibration_display.cpp:10[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::RosTopicComboBox(rclcpp::Node::SharedPtr, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:110:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::node_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  110 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:119:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[KQComboBox[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 | Ptr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent[01;35m[K)[m[K
+      |                                                                       [01;35m[K^[m[K
+
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:12:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit [01;35m[KRosTopicComboBox[m[K(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent)
+      |            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K At global scope:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:195:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  195 |   sensor_msgs::msg::CameraInfo::ConstPtr [01;35m[Kcamera_info_[m[K;
+      |                                          [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:7[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:61[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:46[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/X3SZ3HJNRA/../../../../../moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/X3SZ3HJNRA/moc_handeye_calibration_display.cpp:10[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:222:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  222 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:46[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_frame.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::RosTopicComboBox(rclcpp::Node::SharedPtr, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:110:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::node_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  110 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:119:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[KQComboBox[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit RosTopicComboBox(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent[01;35m[K)[m[K
+      |                                                                                                                       [01;35m[K^[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:12:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit [01;35m[KRosTopicComboBox[m[K(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent)
+      |            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K At global scope:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:195:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  195 |   sensor_msgs::msg::CameraInfo::ConstPtr [01;35m[Kcamera_info_[m[K;
+      |                                          [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:7[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:61[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:46[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_frame.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:222:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  222 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:47[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_display.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::TFFrameNameComboBox(rviz_common::DisplayContext*, rclcpp::Node::SharedPtr&, moveit_rviz_plugin::FRAME_SOURCE, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:113:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::context_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  113 |   rviz_common::DisplayContext* [01;35m[Kcontext_[m[K;
+      |                                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:112:27:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Node::SharedPtr moveit_rviz_plugin::TFFrameNameComboBox::node_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  112 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:93:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   93 |   [01;35m[KTFFrameNameComboBox[m[K(rviz_common::DisplayContext* context, rclcpp::Node::SharedPtr& node,
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:47[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/X3SZ3HJNRA/../../../../../moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/X3SZ3HJNRA/moc_handeye_calibration_display.cpp:10[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/build/moveit_calibration_gui/handeye_calibration_rviz_plugin/moveit_handeye_calibration_rviz_plugin_core_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::TFFrameNameComboBox(rviz_common::DisplayContext*, rclcpp::Node::SharedPtr&, moveit_rviz_plugin::FRAME_SOURCE, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:113:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::context_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  113 |   rviz_common::DisplayContext* [01;35m[Kcontext_[m[K;
+      |                                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:112:27:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Node::SharedPtr moveit_rviz_plugin::TFFrameNameComboBox::node_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  112 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:93:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   93 |   [01;35m[KTFFrameNameComboBox[m[K(rviz_common::DisplayContext* context, rclcpp::Node::SharedPtr& node,
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:47[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:70[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::TFFrameNameComboBox(rviz_common::DisplayContext*, rclcpp::Node::SharedPtr&, moveit_rviz_plugin::FRAME_SOURCE, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:113:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::context_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  113 |   rviz_common::DisplayContext* [01;35m[Kcontext_[m[K;
+      |                                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:112:27:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Node::SharedPtr moveit_rviz_plugin::TFFrameNameComboBox::node_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  112 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:93:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   93 |   [01;35m[KTFFrameNameComboBox[m[K(rviz_common::DisplayContext* context, rclcpp::Node::SharedPtr& node,
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:47[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_frame.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::TFFrameNameComboBox(rviz_common::DisplayContext*, rclcpp::Node::SharedPtr&, moveit_rviz_plugin::FRAME_SOURCE, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:113:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::context_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  113 |   rviz_common::DisplayContext* [01;35m[Kcontext_[m[K;
+      |                                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:112:27:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Node::SharedPtr moveit_rviz_plugin::TFFrameNameComboBox::node_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  112 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:93:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   93 |   [01;35m[KTFFrameNameComboBox[m[K(rviz_common::DisplayContext* context, rclcpp::Node::SharedPtr& node,
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:46[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:61[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::RosTopicComboBox(rclcpp::Node::SharedPtr, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:110:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::node_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  110 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:119:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[KQComboBox[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit RosTopicComboBox(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent[01;35m[K)[m[K
+      |                                                                                                                       [01;35m[K^[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:12:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit [01;35m[KRosTopicComboBox[m[K(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent)
+      |            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K At global scope:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:195:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  195 |   sensor_msgs::msg::CameraInfo::ConstPtr [01;35m[Kcamera_info_[m[K;
+      |                                          [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:7[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:54[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:222:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  222 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_display.cpp:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::HandEyeCalibrationDisplay::HandEyeCalibrationDisplay(QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_display.cpp:49:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kparent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   49 | HandEyeCalibrationDisplay::HandEyeCalibrationDisplay([01;35m[KQWidget* parent[m[K) : Display()
+      |                                                      [01;35m[K~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:46[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:66[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::RosTopicComboBox(rclcpp::Node::SharedPtr, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:110:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::node_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  110 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:119:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[KQComboBox[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit RosTopicComboBox(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent[01;35m[K)[m[K
+      |                                                                                                                       [01;35m[K^[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:12:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit [01;35m[KRosTopicComboBox[m[K(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent)
+      |            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::RosTopicComboBox(rclcpp::Node::SharedPtr, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:110:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::node_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  110 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:119:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[KQComboBox[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit RosTopicComboBox(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent[01;35m[K)[m[K
+      |                                                                                                                       [01;35m[K^[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:12:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit [01;35m[KRosTopicComboBox[m[K(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent)
+      |            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_frame.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::HandEyeCalibrationFrame::HandEyeCalibrationFrame(moveit_rviz_plugin::HandEyeCalibrationDisplay*, rviz_common::DisplayContext*, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:89:30:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::HandEyeCalibrationFrame::calibration_display_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   89 |   HandEyeCalibrationDisplay* [01;35m[Kcalibration_display_[m[K;
+      |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:88:32:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krviz_common::DisplayContext* moveit_rviz_plugin::HandEyeCalibrationFrame::context_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   88 |   rviz_common::DisplayContext* [01;35m[Kcontext_[m[K;
+      |                                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_calibration_frame.cpp:46:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   46 | [01;35m[KHandEyeCalibrationFrame[m[K::HandEyeCalibrationFrame(HandEyeCalibrationDisplay* pdisplay,
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K At global scope:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:195:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  195 |   sensor_msgs::msg::CameraInfo::ConstPtr [01;35m[Kcamera_info_[m[K;
+      |                                          [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:7[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:61[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:46[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:66[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:222:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  222 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K At global scope:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:195:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  195 |   sensor_msgs::msg::CameraInfo::ConstPtr [01;35m[Kcamera_info_[m[K;
+      |                                          [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:7[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:61[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:222:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  222 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:[m[K In member function ‘[01m[Kvirtual void moveit_rviz_plugin::RosTopicComboBox::mousePressEvent(QMouseEvent*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:78:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   78 | void RosTopicComboBox::mousePressEvent([01;35m[KQMouseEvent* event[m[K)
+      |                                        [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::TargetTabWidget::TargetTabWidget(rclcpp::Node::SharedPtr, moveit_rviz_plugin::HandEyeCalibrationDisplay*, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:200:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::TargetTabWidget::node_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  200 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:165:30:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kmoveit_rviz_plugin::HandEyeCalibrationDisplay* moveit_rviz_plugin::TargetTabWidget::calibration_display_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  165 |   HandEyeCalibrationDisplay* [01;35m[Kcalibration_display_[m[K;
+      |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:84:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   84 | [01;35m[KTargetTabWidget[m[K::TargetTabWidget(rclcpp::Node::SharedPtr node, HandEyeCalibrationDisplay* pdisplay, QWidget* parent)
+      | [01;35m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:208:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::TargetTabWidget::tf_pub_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  208 |   std::shared_ptr<tf2_ros::TransformBroadcaster> [01;35m[Ktf_pub_[m[K;
+      |                                                  [01;35m[K^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:201:91:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::unique_ptr<pluginlib::ClassLoader<moveit_handeye_calibration::HandEyeTargetBase> > moveit_rviz_plugin::TargetTabWidget::target_plugins_loader_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  201 |   std::unique_ptr<pluginlib::ClassLoader<moveit_handeye_calibration::HandEyeTargetBase> > [01;35m[Ktarget_plugins_loader_[m[K;
+      |                                                                                           [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:84:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   84 | [01;35m[KTargetTabWidget[m[K::TargetTabWidget(rclcpp::Node::SharedPtr node, HandEyeCalibrationDisplay* pdisplay, QWidget* parent)
+      | [01;35m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:202:71:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::TargetTabWidget::target_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  202 |   pluginlib::UniquePtr<moveit_handeye_calibration::HandEyeTargetBase> [01;35m[Ktarget_[m[K;
+      |                                                                       [01;35m[K^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:172:16:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KQFormLayout* moveit_rviz_plugin::TargetTabWidget::target_param_layout_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  172 |   QFormLayout* [01;35m[Ktarget_param_layout_[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:84:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   84 | [01;35m[KTargetTabWidget[m[K::TargetTabWidget(rclcpp::Node::SharedPtr node, HandEyeCalibrationDisplay* pdisplay, QWidget* parent)
+      | [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::TargetTabWidget::createTargetImageBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:491:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  491 | void TargetTabWidget::createTargetImageBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                                   [01;35m[K~~~~~^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::TargetTabWidget::saveTargetImageBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_target_widget.cpp:513:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  513 | void TargetTabWidget::saveTargetImageBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                                 [01;35m[K~~~~~^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::TFFrameNameComboBox(rviz_common::DisplayContext*, rclcpp::Node::SharedPtr&, moveit_rviz_plugin::FRAME_SOURCE, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:113:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::context_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  113 |   rviz_common::DisplayContext* [01;35m[Kcontext_[m[K;
+      |                                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:112:27:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Node::SharedPtr moveit_rviz_plugin::TFFrameNameComboBox::node_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  112 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:93:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   93 |   [01;35m[KTFFrameNameComboBox[m[K(rviz_common::DisplayContext* context, rclcpp::Node::SharedPtr& node,
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:[m[K In member function ‘[01m[Kvirtual void moveit_rviz_plugin::TFFrameNameComboBox::mousePressEvent(QMouseEvent*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:42:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   42 | void TFFrameNameComboBox::mousePressEvent([01;35m[KQMouseEvent* event[m[K)
+      |                                           [01;35m[K~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::SliderWidget::SliderWidget(QWidget*, std::string, double, double)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:153:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::SliderWidget::min_position_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  153 |   double [01;35m[Kmin_position_[m[K;
+      |          [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:152:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble moveit_rviz_plugin::SliderWidget::max_position_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  152 |   double [01;35m[Kmax_position_[m[K;
+      |          [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:83:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   83 | [01;35m[KSliderWidget[m[K::SliderWidget(QWidget* parent, std::string name, double min, double max)
+      | [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::ContextTabWidget::ContextTabWidget(rclcpp::Node::SharedPtr, moveit_rviz_plugin::HandEyeCalibrationDisplay*, rviz_common::DisplayContext*, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:248:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::ContextTabWidget::context_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  248 |   rviz_common::DisplayContext* [01;35m[Kcontext_[m[K;
+      |                                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:214:30:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kmoveit_rviz_plugin::HandEyeCalibrationDisplay* moveit_rviz_plugin::ContextTabWidget::calibration_display_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  214 |   HandEyeCalibrationDisplay* [01;35m[Kcalibration_display_[m[K;
+      |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:154:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  154 | [01;35m[KContextTabWidget[m[K::ContextTabWidget(rclcpp::Node::SharedPtr node, HandEyeCalibrationDisplay* pdisplay,
+      | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ContextTabWidget::updateFrameName(int)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:515:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kindex[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  515 | void ContextTabWidget::updateFrameName([01;35m[Kint index[m[K)
+      |                                        [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ContextTabWidget::updateCameraMarkerPose(double)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_context_widget.cpp:541:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvalue[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  541 | void ContextTabWidget::updateCameraMarkerPose([01;35m[Kdouble value[m[K)
+      |                                               [01;35m[K~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:47[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:66[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::TFFrameNameComboBox(rviz_common::DisplayContext*, rclcpp::Node::SharedPtr&, moveit_rviz_plugin::FRAME_SOURCE, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:113:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::context_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  113 |   rviz_common::DisplayContext* [01;35m[Kcontext_[m[K;
+      |                                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:112:27:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Node::SharedPtr moveit_rviz_plugin::TFFrameNameComboBox::node_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  112 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:93:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   93 |   [01;35m[KTFFrameNameComboBox[m[K(rviz_common::DisplayContext* context, rclcpp::Node::SharedPtr& node,
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::ControlTabWidget::ControlTabWidget(rclcpp::Node::SharedPtr, moveit_rviz_plugin::HandEyeCalibrationDisplay*, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:259:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::ControlTabWidget::node_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  259 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:204:30:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kmoveit_rviz_plugin::HandEyeCalibrationDisplay* moveit_rviz_plugin::ControlTabWidget::calibration_display_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  204 |   HandEyeCalibrationDisplay* [01;35m[Kcalibration_display_[m[K;
+      |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:97:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   97 | [01;35m[KControlTabWidget[m[K::ControlTabWidget(rclcpp::Node::SharedPtr node, HandEyeCalibrationDisplay* pdisplay, QWidget* parent)
+      | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:261:30:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::ControlTabWidget::tf_listener_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  261 |   tf2_ros::TransformListener [01;35m[Ktf_listener_[m[K;
+      |                              [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:244:24:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kmoveit_handeye_calibration::SensorMountType moveit_rviz_plugin::ControlTabWidget::sensor_mount_type_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  244 |   mhc::SensorMountType [01;35m[Ksensor_mount_type_[m[K;
+      |                        [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:97:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   97 | [01;35m[KControlTabWidget[m[K::ControlTabWidget(rclcpp::Node::SharedPtr node, HandEyeCalibrationDisplay* pdisplay, QWidget* parent)
+      | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:266:53:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::ControlTabWidget::move_group_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  266 |   moveit::planning_interface::MoveGroupInterfacePtr [01;35m[Kmove_group_[m[K;
+      |                                                     [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:250:21:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KEigen::Isometry3d moveit_rviz_plugin::ControlTabWidget::camera_robot_pose_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  250 |   Eigen::Isometry3d [01;35m[Kcamera_robot_pose_[m[K;
+      |                     [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:97:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   97 | [01;35m[KControlTabWidget[m[K::ControlTabWidget(rclcpp::Node::SharedPtr node, HandEyeCalibrationDisplay* pdisplay, QWidget* parent)
+      | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::loadWidget(const rviz_common::Config&)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:259:36:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid QComboBox::activated(const QString&)[m[K’ is deprecated: Use textActivated() instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  259 |       Q_EMIT [01;35m[Kgroup_name_->activated(group_name)[m[K;
+      |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox:1[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:44[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h:245:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  245 |     void [01;36m[Kactivated[m[K(const QString &);
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:266:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  266 |     for (size_t i = 0; [01;35m[Ki < calibration_solver_->count()[m[K; ++i)
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:271:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid QComboBox::activated(const QString&)[m[K’ is deprecated: Use textActivated() instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  271 |         Q_EMIT [01;35m[Kcalibration_solver_->activated(solver_name)[m[K;
+      |                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox:1[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:44[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h:245:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  245 |     void [01;36m[Kactivated[m[K(const QString &);
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::solveBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:390:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  390 | void ControlTabWidget::solveBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                        [01;35m[K~~~~~^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::takeSampleBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:557:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  557 | void ControlTabWidget::takeSampleBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                             [01;35m[K~~~~~^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::clearSamplesBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:594:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  594 | void ControlTabWidget::clearSamplesBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                               [01;35m[K~~~~~^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::saveCameraPoseBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:607:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  607 | void ControlTabWidget::saveCameraPoseBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                                 [01;35m[K~~~~~^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::fillPlanningGroupNameComboBox()[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:726:106:[m[K [01;35m[Kwarning: [m[K‘[01m[Kplanning_scene_monitor::PlanningSceneMonitor::PlanningSceneMonitor(const SharedPtr&, const string&, const std::shared_ptr<tf2_ros::Buffer>&, const string&)[m[K’ is deprecated: Passing tf2_ros::Buffer to PlanningSceneMonitor's constructor is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  726 |                                                                                  "planning_scene_monitor"[01;35m[K)[m[K);
+      |                                                                                                          [01;35m[K^[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:63[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/moveit/planning_scene_monitor/planning_scene_monitor.h:124:97:[m[K [01;36m[Knote: [m[Kdeclared here
+  124 |   [[deprecated("Passing tf2_ros::Buffer to PlanningSceneMonitor's constructor is deprecated")]] [01;36m[KPlanningSceneMonitor[m[K(
+      |                                                                                                 [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::saveJointStateBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:746:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  746 | void ControlTabWidget::saveJointStateBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                                 [01;35m[K~~~~~^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::loadSamplesBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:800:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  800 | void ControlTabWidget::loadSamplesBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                              [01;35m[K~~~~~^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::saveSamplesBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:842:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  842 | void ControlTabWidget::saveSamplesBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                              [01;35m[K~~~~~^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::loadJointStateBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:901:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  901 | void ControlTabWidget::loadJointStateBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                                 [01;35m[K~~~~~^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::autoPlanBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:975:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  975 | void ControlTabWidget::autoPlanBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                           [01;35m[K~~~~~^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::computePlan()[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:986:11:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  986 |   if ([01;35m[Kmax != joint_states_.size()[m[K || auto_progress_->getValue() == max)
+      |       [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:1025:34:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1025 |   if ([01;35m[Kauto_progress_->getValue() < joint_states_.size()[m[K)
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:1032:104:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1032 |     planning_res_ = (move_group_->plan(*current_plan_) == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K) ?
+      |                                                                                                        [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:62[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::autoExecuteBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:1043:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1043 | void ControlTabWidget::autoExecuteBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                              [01;35m[K~~~~~^~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::computeExecution()[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:1057:107:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1057 |     planning_res_ = (move_group_->execute(*current_plan_) == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K) ?
+      |                                                                                                           [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_control_widget.h:62[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:37[m[K:
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:[m[K In member function ‘[01m[Kvoid moveit_rviz_plugin::ControlTabWidget::autoSkipBtnClicked(bool)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/handeye_control_widget.cpp:1117:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kclicked[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1117 | void ControlTabWidget::autoSkipBtnClicked([01;35m[Kbool clicked[m[K)
+      |                                           [01;35m[K~~~~~^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:53[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:47[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/plugin_init.cpp:38[m[K:
+[01m[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   32 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:46[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/plugin_init.cpp:38[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::RosTopicComboBox(rclcpp::Node::SharedPtr, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:110:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::RosTopicComboBox::node_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  110 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:119:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[KQComboBox[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit RosTopicComboBox(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent[01;35m[K)[m[K
+      |                                                                                                                       [01;35m[K^[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:92:12:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   92 |   explicit [01;35m[KRosTopicComboBox[m[K(rclcpp::Node::SharedPtr node, QWidget* parent = Q_NULLPTR) : node_(node), QComboBox(parent)
+      |            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:[m[K At global scope:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:195:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  195 |   sensor_msgs::msg::CameraInfo::ConstPtr [01;35m[Kcamera_info_[m[K;
+      |                                          [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:7[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_target_widget.h:61[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:46[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/plugin_init.cpp:38[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:222:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  222 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_frame.h:47[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_calibration_display.h:43[m[K,
+                 from [01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/src/plugin_init.cpp:38[m[K:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:[m[K In constructor ‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::TFFrameNameComboBox(rviz_common::DisplayContext*, rclcpp::Node::SharedPtr&, moveit_rviz_plugin::FRAME_SOURCE, QWidget*)[m[K’:
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:113:32:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmoveit_rviz_plugin::TFFrameNameComboBox::context_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  113 |   rviz_common::DisplayContext* [01;35m[Kcontext_[m[K;
+      |                                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:112:27:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Node::SharedPtr moveit_rviz_plugin::TFFrameNameComboBox::node_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  112 |   rclcpp::Node::SharedPtr [01;35m[Knode_[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/home/w/work/moveit2_handeye_calib/moveit2_calibration/moveit_calibration_gui/handeye_calibration_rviz_plugin/include/moveit/handeye_calibration_rviz_plugin/handeye_context_widget.h:93:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   93 |   [01;35m[KTFFrameNameComboBox[m[K(rviz_common::DisplayContext* context, rclcpp::Node::SharedPtr& node,
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K

@@ -1,0 +1,29 @@
+[0.021s] Invoking command in '/home/w/work/moveit2_handeye_calib/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/w/work/moveit2_handeye_calib/install/traj_smoother_py:/home/w/work/moveit2_handeye_calib/install/robot_test_py:/home/w/work/moveit2_handeye_calib/install/robot_input:/home/w/work/moveit2_handeye_calib/install/robot_dynamics:/opt/ros/humble /usr/bin/cmake --build /home/w/work/moveit2_handeye_calib/build/robot_bringup -- -j28 -l28
+[0.368s] Invoked command in '/home/w/work/moveit2_handeye_calib/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/w/work/moveit2_handeye_calib/install/traj_smoother_py:/home/w/work/moveit2_handeye_calib/install/robot_test_py:/home/w/work/moveit2_handeye_calib/install/robot_input:/home/w/work/moveit2_handeye_calib/install/robot_dynamics:/opt/ros/humble /usr/bin/cmake --build /home/w/work/moveit2_handeye_calib/build/robot_bringup -- -j28 -l28
+[0.369s] Invoking command in '/home/w/work/moveit2_handeye_calib/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/w/work/moveit2_handeye_calib/install/traj_smoother_py:/home/w/work/moveit2_handeye_calib/install/robot_test_py:/home/w/work/moveit2_handeye_calib/install/robot_input:/home/w/work/moveit2_handeye_calib/install/robot_dynamics:/opt/ros/humble /usr/bin/cmake --install /home/w/work/moveit2_handeye_calib/build/robot_bringup
+[0.375s] -- Install configuration: ""
+[0.375s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/launch
+[0.375s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/launch/robot_real.launch.py
+[0.375s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/launch/robot_gazebo.launch.py
+[0.375s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/launch/arm620_real.launch.py
+[0.375s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/launch/arm380_real.launch.py
+[0.375s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/launch/arm620_handeye_calib.launch.py
+[0.375s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/launch/arm620_dh_real.launch.py
+[0.375s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/rviz
+[0.375s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/rviz/arm620_handeye_calib.rviz
+[0.375s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/ament_index/resource_index/package_run_dependencies/robot_bringup
+[0.375s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/ament_index/resource_index/parent_prefix_path/robot_bringup
+[0.375s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.sh
+[0.376s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.dsv
+[0.376s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/environment/path.sh
+[0.376s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/environment/path.dsv
+[0.376s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/local_setup.bash
+[0.376s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/local_setup.sh
+[0.376s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/local_setup.zsh
+[0.376s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/local_setup.dsv
+[0.376s] -- Installing: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/package.dsv
+[0.376s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/ament_index/resource_index/packages/robot_bringup
+[0.376s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig.cmake
+[0.376s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig-version.cmake
+[0.376s] -- Up-to-date: /home/w/work/moveit2_handeye_calib/install/robot_bringup/share/robot_bringup/package.xml
+[0.439s] Invoked command in '/home/w/work/moveit2_handeye_calib/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/w/work/moveit2_handeye_calib/install/traj_smoother_py:/home/w/work/moveit2_handeye_calib/install/robot_test_py:/home/w/work/moveit2_handeye_calib/install/robot_input:/home/w/work/moveit2_handeye_calib/install/robot_dynamics:/opt/ros/humble /usr/bin/cmake --install /home/w/work/moveit2_handeye_calib/build/robot_bringup

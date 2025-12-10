@@ -1,0 +1,21 @@
+[1.105s] Invoking command in '/home/w/work/moveit2_handeye_calib/TG620/robot_dynamics': PYTHONPATH=/home/w/work/moveit2_handeye_calib/build/robot_dynamics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w/work/moveit2_handeye_calib/install/robot_dynamics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_dynamics build --build-base /home/w/work/moveit2_handeye_calib/build/robot_dynamics/build install --record /home/w/work/moveit2_handeye_calib/build/robot_dynamics/install.log --single-version-externally-managed install_data
+[1.275s] running egg_info
+[1.276s] writing ../../build/robot_dynamics/robot_dynamics.egg-info/PKG-INFO
+[1.276s] writing dependency_links to ../../build/robot_dynamics/robot_dynamics.egg-info/dependency_links.txt
+[1.276s] writing entry points to ../../build/robot_dynamics/robot_dynamics.egg-info/entry_points.txt
+[1.276s] writing requirements to ../../build/robot_dynamics/robot_dynamics.egg-info/requires.txt
+[1.276s] writing top-level names to ../../build/robot_dynamics/robot_dynamics.egg-info/top_level.txt
+[1.277s] reading manifest file '../../build/robot_dynamics/robot_dynamics.egg-info/SOURCES.txt'
+[1.277s] writing manifest file '../../build/robot_dynamics/robot_dynamics.egg-info/SOURCES.txt'
+[1.277s] running build
+[1.277s] running build_py
+[1.278s] running install
+[1.278s] running install_lib
+[1.279s] running install_data
+[1.279s] running install_egg_info
+[1.280s] removing '/home/w/work/moveit2_handeye_calib/install/robot_dynamics/lib/python3.10/site-packages/robot_dynamics-0.0.0-py3.10.egg-info' (and everything under it)
+[1.280s] Copying ../../build/robot_dynamics/robot_dynamics.egg-info to /home/w/work/moveit2_handeye_calib/install/robot_dynamics/lib/python3.10/site-packages/robot_dynamics-0.0.0-py3.10.egg-info
+[1.280s] running install_scripts
+[1.297s] Installing gravity_compensator script to /home/w/work/moveit2_handeye_calib/install/robot_dynamics/lib/robot_dynamics
+[1.297s] writing list of installed files to '/home/w/work/moveit2_handeye_calib/build/robot_dynamics/install.log'
+[1.320s] Invoked command in '/home/w/work/moveit2_handeye_calib/TG620/robot_dynamics' returned '0': PYTHONPATH=/home/w/work/moveit2_handeye_calib/build/robot_dynamics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/w/work/moveit2_handeye_calib/install/robot_dynamics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_dynamics build --build-base /home/w/work/moveit2_handeye_calib/build/robot_dynamics/build install --record /home/w/work/moveit2_handeye_calib/build/robot_dynamics/install.log --single-version-externally-managed install_data

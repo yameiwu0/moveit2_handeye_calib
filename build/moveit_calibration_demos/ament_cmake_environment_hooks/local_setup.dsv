@@ -1,0 +1,2 @@
+source;share/moveit_calibration_demos/environment/ament_prefix_path.sh
+source;share/moveit_calibration_demos/environment/path.sh

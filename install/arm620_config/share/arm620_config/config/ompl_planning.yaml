@@ -1,0 +1,103 @@
+planning_plugin: ompl_interface/OMPLPlanner
+use_random_seed: true
+random_seed: 12345
+# 请求适配器：路径后处理管线
+request_adapters: >-
+  default_planner_request_adapters/AddTimeOptimalParameterization
+  default_planner_request_adapters/ResolveConstraintFrames
+  default_planner_request_adapters/FixWorkspaceBounds
+  default_planner_request_adapters/FixStartStateBounds
+  default_planner_request_adapters/FixStartStateCollision
+  default_planner_request_adapters/FixStartStatePathConstraints
+
+# 响应适配器：路径简化和平滑
+response_adapters: >-
+  default_planner_request_adapters/AddTimeOptimalParameterization
+  default_planner_response_adapters/ValidateSolution
+  default_planner_response_adapters/DisplayMotionPath
+
+start_state_max_bounds_error: 0.1
+
+# 默认规划超时时间（秒）
+default_planner_timeout: 10.0  # 增加规划时间提升成功率
+
+planner_configs:
+  # ===== RRTConnect - 默认快速规划器 =====
+  RRTConnect:
+    type: geometric::RRTConnect
+    range: 0.0  # 0表示自动选择，通常为max_extent * 0.05
+
+  # ===== RRTstar - 渐进优化算法，轨迹更流畅 =====
+  RRTstar:
+    type: geometric::RRTstar
+    range: 0.0
+    goal_bias: 0.05
+    rewire_factor: 1.1  # 重连接因子，影响优化程度
+    delay_collision_checking: 1  # 延迟碰撞检测提升性能
+
+  # ===== RRT - 基础RRT =====
+  RRT:
+    type: geometric::RRT
+    range: 0.0
+    goal_bias: 0.05
+
+  # ===== PRM - 概率路图，适合多次查询 =====
+  PRM:
+    type: geometric::PRM
+    max_nearest_neighbors: 10
+
+  # ===== PRMstar - 优化版PRM =====
+  PRMstar:
+    type: geometric::PRMstar
+
+  # ===== TRRT - 带温度的RRT，考虑路径代价 =====
+  TRRT:
+    type: geometric::TRRT
+    range: 0.0
+    goal_bias: 0.05
+    frountierThreshold: 0.0
+    k_constant: 0.0
+
+  # ===== LazyPRMstar - 延迟碰撞检测的PRMstar =====
+  LazyPRMstar:
+    type: geometric::LazyPRMstar
+
+  # ===== BKPIECE - 基于网格的双向搜索 =====
+  BKPIECE:
+    type: geometric::BKPIECE
+    range: 0.0
+
+arm:
+  # 默认规划器（可选RRTConnect或RRTstar）
+  default_planner_config: RRTConnect
+
+  # 规划器列表
+  planner_configs:
+    - RRTConnect
+    - RRTstar
+    - RRT
+    - PRM
+    - PRMstar
+    - TRRT
+    - LazyPRMstar
+    - BKPIECE
+
+  # 投影评估器：用于状态空间降维
+  projection_evaluator: joints(joint1,joint2,joint3)
+
+  # 规划参数
+  longest_valid_segment_fraction: 0.001  # 碰撞检测分辨率，越小越精确但越慢
+  
+  # 规划时间和尝试次数
+  num_planning_attempts: 5  # 多次尝试规划，提高成功率
+
+  # 路径简化
+  simplify_solutions: false  # 启用路径简化
+  max_simplify_time: 3.0  # 简化最大时间（秒）
+
+  # 路径平滑
+  smooth_solutions: false  # 启用路径平滑
+  smooth_type: "none"  # 平滑类型：shortcut, b_spline, adaptive_shortcut
+
+  # 优化目标（用于RRTstar等优化算法）
+  optimization_objective: PathLengthOptimizationObjective  # 路径长度优化

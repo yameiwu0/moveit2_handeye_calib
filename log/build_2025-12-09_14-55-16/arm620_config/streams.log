@@ -1,0 +1,63 @@
+[0.009s] Invoking command in '/home/w/work/moveit2_handeye_calib/build/arm620_config': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble /usr/bin/cmake /home/w/work/moveit2_handeye_calib/TG620/robot_config/arm620_config -DCMAKE_INSTALL_PREFIX=/home/w/work/moveit2_handeye_calib/install/arm620_config
+[0.045s] -- The C compiler identification is GNU 11.4.0
+[0.087s] -- The CXX compiler identification is GNU 11.4.0
+[0.093s] -- Detecting C compiler ABI info
+[0.142s] -- Detecting C compiler ABI info - done
+[0.149s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.149s] -- Detecting C compile features
+[0.149s] -- Detecting C compile features - done
+[0.151s] -- Detecting CXX compiler ABI info
+[0.209s] -- Detecting CXX compiler ABI info - done
+[0.214s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.215s] -- Detecting CXX compile features
+[0.215s] -- Detecting CXX compile features - done
+[0.216s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.345s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.461s] -- Configuring done
+[0.462s] -- Generating done
+[0.464s] -- Build files have been written to: /home/w/work/moveit2_handeye_calib/build/arm620_config
+[0.468s] Invoked command in '/home/w/work/moveit2_handeye_calib/build/arm620_config' returned '0': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble /usr/bin/cmake /home/w/work/moveit2_handeye_calib/TG620/robot_config/arm620_config -DCMAKE_INSTALL_PREFIX=/home/w/work/moveit2_handeye_calib/install/arm620_config
+[0.469s] Invoking command in '/home/w/work/moveit2_handeye_calib/build/arm620_config': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble /usr/bin/cmake --build /home/w/work/moveit2_handeye_calib/build/arm620_config -- -j28 -l28
+[0.493s] Invoked command in '/home/w/work/moveit2_handeye_calib/build/arm620_config' returned '0': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble /usr/bin/cmake --build /home/w/work/moveit2_handeye_calib/build/arm620_config -- -j28 -l28
+[0.495s] Invoking command in '/home/w/work/moveit2_handeye_calib/build/arm620_config': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble /usr/bin/cmake --install /home/w/work/moveit2_handeye_calib/build/arm620_config
+[0.499s] -- Install configuration: ""
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/ament_index/resource_index/package_run_dependencies/arm620_config
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/ament_index/resource_index/parent_prefix_path/arm620_config
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/environment/ament_prefix_path.sh
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/environment/ament_prefix_path.dsv
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/environment/path.sh
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/environment/path.dsv
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/local_setup.bash
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/local_setup.sh
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/local_setup.zsh
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/local_setup.dsv
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/package.dsv
+[0.500s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/ament_index/resource_index/packages/arm620_config
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/cmake/arm620_configConfig.cmake
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/cmake/arm620_configConfig-version.cmake
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/package.xml
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/launch
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/launch/static_virtual_joint_tfs.launch.py
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/launch/spawn_controllers.launch.py
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/launch/gazebo_moveit_demo.launch.py
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/launch/move_group.launch.py
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/launch/warehouse_db.launch.py
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/launch/real_moveit_demo.launch.py
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/launch/demo.launch.py
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/launch/setup_assistant.launch.py
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/launch/rsp.launch.py
+[0.501s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/launch/moveit_rviz.launch.py
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config/moveit_controllers.yaml
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config/initial_positions.yaml
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config/ros2_controllers.yaml
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config/moveit.rviz
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config/kinematics.yaml
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config/arm620.urdf.xacro
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config/joint_limits.yaml
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config/arm620.srdf
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config/pilz_cartesian_limits.yaml
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config/ompl_planning.yaml
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/config/arm620.ros2_control.xacro
+[0.502s] -- Installing: /home/w/work/moveit2_handeye_calib/install/arm620_config/share/arm620_config/.setup_assistant
+[0.512s] Invoked command in '/home/w/work/moveit2_handeye_calib/build/arm620_config' returned '0': AMENT_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/w/work/moveit2_handeye_calib/install/robot_description:/home/w/work/trac_ik_ws/install/trac_ik:/home/w/work/trac_ik_ws/install/trac_ik_examples:/home/w/work/trac_ik_ws/install/trac_ik_lib:/opt/ros/humble /usr/bin/cmake --install /home/w/work/moveit2_handeye_calib/build/arm620_config
