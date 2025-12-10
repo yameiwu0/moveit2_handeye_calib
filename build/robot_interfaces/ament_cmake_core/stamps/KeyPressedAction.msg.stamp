@@ -1,3 +1,0 @@
-uint8 key_code
-bool is_pressed
-bool use_tool_frame

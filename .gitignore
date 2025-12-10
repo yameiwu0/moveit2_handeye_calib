@@ -1,0 +1,33 @@
+# ROS2 build files
+build/
+install/
+log/
+
+# catkin/colcon intermediate files
+colcon_ws.log
+CTestTestfile.cmake
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+
+# executables / binaries
+*.o
+*.so
+*.a
+*.out
+*.exe
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VSCode
+.vscode/
+
+# CLion
+.idea/
+
+# 不要忽略源码
+# src/ 不要加任何忽略规则
+

@@ -1,4 +1,0 @@
-Invoking command in '/home/w/work/moveit2_handeye_calib/build/robot_virtual_fence': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/w/work/moveit2_handeye_calib/build/robot_virtual_fence -- -j28 -l28
-Invoked command in '/home/w/work/moveit2_handeye_calib/build/robot_virtual_fence' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/w/work/moveit2_handeye_calib/build/robot_virtual_fence -- -j28 -l28
-Invoking command in '/home/w/work/moveit2_handeye_calib/build/robot_virtual_fence': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/w/work/moveit2_handeye_calib/build/robot_virtual_fence
-Invoked command in '/home/w/work/moveit2_handeye_calib/build/robot_virtual_fence' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/w/work/moveit2_handeye_calib/build/robot_virtual_fence
