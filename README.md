@@ -2,7 +2,7 @@
 # MoveIt2 Hand-Eye Calibration (moveit2_handeye_calib)
 
 基于 **MoveIt2** 的 **手眼标定 (Hand-Eye Calibration) 工具**，适配 ROS 2 机械臂平台。
-目前仓库已在 **TG620 六轴机械臂 + ROS 2 Humble** 平台上完成实现与验证。其他机械臂只需保证 **话题接口一致**（末端位姿、相机 TF 等），即可快速接入使用。
+目前仓库已在 **TG_ARM 六轴机械臂 + ROS 2 Humble** 平台上完成实现与验证。其他机械臂只需保证 **话题接口一致**（末端位姿、相机 TF 等），即可快速接入使用。
 
 ---
 
@@ -12,7 +12,7 @@
 - 基于 **MoveIt2 Calibration** 框架，集成 ChArUco / ArUco 标定板采集。
 - 通过 MoveIt2 与 RViz2 提供交互式 GUI，标定过程可视化。
 - 标定结果以 **TF 发布**，可直接用于机器人视觉任务。
-- 支持 TG620 系列机械臂（ARM380、ARM620 等），未来可扩展至其他机械臂平台。
+- 支持 TG_ARM 系列机械臂（ARM380、ARM620 等），未来可扩展至其他机械臂平台。
 
 ---
 
@@ -36,7 +36,7 @@
   - `moveit_calibration`
   - `tf2_ros`, `geometry_msgs`, `sensor_msgs`
   - `OpenCV` (用于 ArUco/ChArUco 检测，需要 contrib 模块)
-  - TG620 机械臂 ROS2 驱动（包含在本仓库）
+  - TG_ARM 机械臂 ROS2 驱动（包含在本仓库）
   - `realsense2_camera`（如果使用 RealSense 相机）
   - `ros2_socketcan` (用于 CAN 总线通信)
 
@@ -66,7 +66,7 @@ sudo apt install ros-humble-moveit-core ros-humble-moveit-ros-planning-interface
 
 ```text
 moveit2_handeye_calib/
-├── TG620/                     # TG620 六轴机械臂 ROS 2 驱动与支持包
+├── TG_ARM/                    # TG_ARM 六轴机械臂 ROS 2 驱动与支持包
 │   ├── robot_bringup/         # 启动相关节点与配置
 │   ├── robot_config/          # 机械臂配置文件
 │   │   ├── arm380_config/     # ARM380 MoveIt2 配置
@@ -97,8 +97,8 @@ moveit2_handeye_calib/
 
 ### 各模块说明
 
-1. **TG620**
-   - 提供 **TG620 六轴机械臂在 ROS2 下的完整支持**，包括硬件接口、运动控制器、状态管理以及 MoveIt2 配置文件。
+1. **TG_ARM**
+   - 提供 **TG_ARM 六轴机械臂在 ROS2 下的完整支持**，包括硬件接口、运动控制器、状态管理以及 MoveIt2 配置文件。
    - 支持 **ARM380**、**ARM620** 等多种型号机械臂。
    - 通过 **CAN 总线**（ros2_socketcan）与机械臂底层通信，实现实时控制。
    - 集成 MoveIt2 规划与执行接口，可直接用于手眼标定。
@@ -106,10 +106,10 @@ moveit2_handeye_calib/
 2. **moveit2_calibration**
    - MoveIt2 官方的 **手眼标定功能包**，包含标定插件、图形化界面和示例程序。
    - 提供基于 **ArUco/ChArUco** 标定板的采集与求解功能。
-   - 与 TG620 的 MoveIt2 配置结合，即可完成 **eye-in-hand** 和 **eye-to-hand** 标定。
+   - 与 TG_ARM 的 MoveIt2 配置结合，即可完成 **eye-in-hand** 和 **eye-to-hand** 标定。
 
 3. **顶层集成**
-   - 本仓库通过将 **TG620** 与 **moveit2_calibration** 统一放置在同一工作区，实现 TG620 机械臂的手眼标定方案。
+   - 本仓库通过将 **TG_ARM** 与 **moveit2_calibration** 统一放置在同一工作区，实现 TG_ARM 机械臂的手眼标定方案。
    - 支持扩展至 **其他机械臂平台**，只需保证末端位姿与相机 TF 话题对齐即可。
 
 ---
@@ -120,7 +120,7 @@ moveit2_handeye_calib/
 
 ```bash
 cd ~/ros2_ws/src
-git clone https://github.com/cheng9911/moveit2_handeye_calib.git
+git clone https://github.com/yameiwu0/moveit2_handeye_calib.git
 ```
 
 ### 2. 编译
@@ -146,20 +146,25 @@ colcon build --cmake-args -DOpenCV_DIR=/usr/lib/aarch64-linux-gnu/cmake/opencv4
 本仓库提供了**一键启动所有必要节点**的启动文件，无需单独启动机械臂和相机：
 
 ```bash
-# ARM620 手眼标定一键启动（启动所有必要组件）
+# ARM620 手眼标定一键启动
 ros2 launch robot_bringup arm620_handeye_calib.launch.py
+
+# ARM380 手眼标定一键启动
+ros2 launch robot_bringup arm380_handeye_calib.launch.py
 ```
 
 这个启动文件会**自动启动以下所有组件**：
 - ✅ 机械臂 CAN 驱动（robot_driver）
 - ✅ 机械臂 SDK 功能（robot_sdk）
-- ✅ 机械臂 URDF/TF 发布（使用 DH 模型）
+- ✅ 机械臂 URDF/TF 发布
 - ✅ 机械臂控制器（robot_control）
 - ✅ MoveIt2 规划与执行接口（含 RViz）
 - ✅ RealSense D435i 相机驱动
 - ✅ 相机安装位置 TF（eye-in-hand 配置，相机装在末端）
 
-**启动文件位置**：[TG620/robot_bringup/launch/arm620_handeye_calib.launch.py](TG620/robot_bringup/launch/arm620_handeye_calib.launch.py)
+**启动文件位置**：
+- ARM620: [TG_ARM/robot_bringup/launch/arm620_handeye_calib.launch.py](TG_ARM/robot_bringup/launch/arm620_handeye_calib.launch.py)
+- ARM380: [TG_ARM/robot_bringup/launch/arm380_handeye_calib.launch.py](TG_ARM/robot_bringup/launch/arm380_handeye_calib.launch.py)
 
 **重要提示**：
 - 使用此启动文件后，**无需再单独启动机械臂驱动或相机节点**
@@ -168,24 +173,59 @@ ros2 launch robot_bringup arm620_handeye_calib.launch.py
 
 ### 4. 进行手眼标定
 
-启动后，RViz 会自动打开并显示机械臂模型和相机视图。进行标定的步骤：
+启动后，RViz 会自动打开并显示机械臂模型和相机视图。
+
+**已预配置的标定参数**（无需手动设置）：
+
+RViz 配置文件 `arm620_handeye_calib.rviz` 已预设好以下参数，标定人员可直接使用：
+
+| 参数 | 预设值 | 说明 |
+|------|--------|------|
+| Target Type | `HandEyeTarget/Aruco` | ArUco 标定板 |
+| ArUco dictionary | `DICT_ARUCO_ORIGINAL` | ArUco 字典类型 |
+| markers, X | 2 | X 方向 marker 数量 |
+| markers, Y | 2 | Y 方向 marker 数量 |
+| marker size (px) | 400 | marker 像素大小 |
+| marker separation (px) | 40 | marker 间距像素 |
+| measured marker size (m) | 0.085 | 实际测量的 marker 尺寸（米） |
+| measured separation (m) | 0.013 | 实际测量的 marker 间距（米） |
+| Calibration Type | eye_in_hand | 相机装在末端 |
+| Sensor Frame | camera_color_optical_frame | 相机光学坐标系 |
+| End-effector Frame | Link6 | 末端执行器坐标系 |
+| Robot Base Frame | base_link | 机器人基座坐标系 |
+| Camera Image Topic | /camera/camera/color/image_raw | 相机图像话题 |
+
+> **注意**：如果您的标定板尺寸不同，请在 **Target** 标签页中修改 `measured marker size (m)` 和 `measured separation (m)` 为实际测量值。
+
+**标定步骤**：
 
 1. 在 RViz 左侧找到 **HandEye Calibration** 插件面板
-2. 配置标定参数：
-   - **Sensor Mount Type**: 选择 `eye-in-hand`（相机装在末端）或 `eye-to-hand`（相机固定）
-   - **Target Type**: 选择 ArUco 或 ChArUco 标定板类型
-   - **相机话题**: 选择相机图像话题（如 `/camera/color/image_raw`）
-3. 使用 **MoveIt2** 控制机械臂移动到不同姿态，每个姿态下采集一个数据点
-4. 采集 **至少 5-10 个不同姿态** 的数据点（越多越好）
-5. 点击 **Calculate** 计算手眼变换矩阵
-6. 查看标定结果的重投影误差，确保精度满足要求
-7. 标定结果会通过 **TF 自动发布**到系统中
+2. 切换到 **Target** 标签页，点击 **Create Target** 生成标定板图像并打印
+3. 测量打印后的标定板实际尺寸，如有差异请更新 `measured marker size (m)` 和 `measured separation (m)`
+4. 切换到 **Context** 标签页，确认参数配置正确（已预设好，通常无需修改）
+5. 切换到 **Calibrate** 标签页
+6. 使用 **MoveIt2** 控制机械臂移动到不同姿态，每个姿态下点击 **Take Sample** 采集数据点
+7. 采集 **至少 5-10 个不同姿态** 的数据点（越多越好）
+8. 点击 **Calculate** 计算手眼变换矩阵
+9. 查看标定结果的重投影误差，确保精度满足要求
+10. 标定结果会通过 **TF 自动发布**到系统中
+
+**删除单个采集点**：
+
+如果某个采集点不合适（如标定板检测不准确、机械臂位姿不佳），可以单独删除：
+
+1. 在 **Calibrate** 标签页的数据点列表中，**选中**要删除的采集点（点击该行）
+2. 点击 **Clear Last Sample**（删除最后一个）或在列表中右键选择删除
+3. 如需删除特定点，可以先选中该点，然后使用删除功能
+
+这样可以只删除不合适的采集点，保留其他有效数据，无需重新采集全部。
 
 **注意事项**：
-- 标定板需要保持静止（eye-in-hand）或机械臂末端保持静止（eye-to-hand）
+- 标定板需要保持静止（eye-in-hand 模式下）
 - 采集数据时应覆盖机械臂工作空间的不同位置和角度
 - 确保相机能清晰看到标定板，避免遮挡和反光
 - 标定板与相机距离建议在 0.3-1.0 米之间
+- 每个姿态下确保标定板完全在相机视野内且检测框稳定
 
 ### 5. 保存标定结果
 
@@ -205,7 +245,7 @@ ros2 run tf2_ros tf2_echo Link6 camera_color_optical_frame
 
 **步骤 2：创建标定结果启动文件**
 
-创建一个新的启动文件来发布标定结果。参考示例 [TG620/robot_bringup/launch/bd01.launch.py](TG620/robot_bringup/launch/bd01.launch.py)：
+创建一个新的启动文件来发布标定结果。参考示例 [TG_ARM/robot_bringup/launch/bd01.launch.py](TG_ARM/robot_bringup/launch/bd01.launch.py)：
 
 ```python
 """ Static transform publisher acquired via MoveIt 2 hand-eye calibration """
@@ -272,7 +312,7 @@ ros2 launch robot_bringup bd01.launch.py
 ros2 launch robot_bringup bd01.launch.py
 
 # 在另一个终端运行脚本读取标定矩阵
-python3 /home/orin/work/moveit2_handeye_calib/TG620/robot_bringup/scripts/read_calib_matrix.py
+python3 /home/orin/work/moveit2_handeye_calib/TG_ARM/robot_bringup/scripts/read_calib_matrix.py
 ```
 
 **脚本输出示例**：

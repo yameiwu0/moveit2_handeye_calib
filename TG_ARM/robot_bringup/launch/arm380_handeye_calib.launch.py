@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""TG620 ARM620 手眼标定启动文件 (Eye-in-Hand 配置)"""
+"""TG_ARM ARM380 手眼标定启动文件 (Eye-in-Hand 配置)"""
 
 import os
 from math import pi
@@ -19,7 +19,7 @@ def generate_launch_description():
     # 默认 rviz 配置文件路径
     default_rviz_config = os.path.join(
         get_package_share_directory('robot_bringup'),
-        'rviz', 'arm620_handeye_calib.rviz'
+        'rviz', 'arm380_handeye_calib.rviz'
     )
 
     # 1. 启动机械臂 CAN 驱动
@@ -38,11 +38,11 @@ def generate_launch_description():
         )
     )
 
-    # 3. 启动机械臂描述 (URDF + TF) - 使用 DH 模型
+    # 3. 启动机械臂描述 (URDF + TF) - ARM380
     robot_description = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(get_package_share_directory('robot_description'),
-                        'launch', 'arm620_dh_display.launch.py')
+                        'launch', 'arm380_display.launch.py')
         )
     )
 
@@ -54,10 +54,10 @@ def generate_launch_description():
         )
     )
 
-    # 5. 启动 MoveIt2 (move_group + rviz)
+    # 5. 启动 MoveIt2 (move_group + rviz) - ARM380 配置
     robot_moveit_config = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(get_package_share_directory('arm620_config'),
+            os.path.join(get_package_share_directory('arm380_config'),
                         'launch', 'real_moveit_demo.launch.py')
         ),
         launch_arguments={
@@ -83,15 +83,15 @@ def generate_launch_description():
 
     # 7. 相机安装位置静态 TF 发布 (eye-in-hand: 相机装在末端连接板上)
     # 将 RealSense 的 camera_link 连接到机械臂 Link6
-    # 相机与夹爪在同一平面 (z=0.02, 连接板高度)，Y方向偏移5.5cm
+    # 相机与夹爪在同一平面，根据实际安装位置调整偏移
     camera_mount_tf = Node(
         package="tf2_ros",
         executable="static_transform_publisher",
         name="camera_mount_tf",
         arguments=[
             "--x", "0.0",        # 相机在 Link6 X方向偏移
-            "--y", "0.058",      # 相机在 Link6 Y方向偏移 5.5cm
-            "--z", "0.02",       # 相机在 Link6 Z方向偏移 2cm (连接板高度)
+            "--y", "0.058",      # 相机在 Link6 Y方向偏移
+            "--z", "0.02",       # 相机在 Link6 Z方向偏移 (连接板高度)
             "--roll", "0.0",
             "--pitch", "0.0",
             "--yaw", "0.0",
@@ -99,21 +99,6 @@ def generate_launch_description():
             "--child-frame-id", "camera_link",  # RealSense 的 camera_link
         ],
     )
-
-    # 8. 相机光学坐标系变换 (ROS 相机坐标系约定)
-    # RealSense 相机会自动发布这个变换，如果没有则需要手动发布
-    # camera_optical_tf = Node(
-    #     package="tf2_ros",
-    #     executable="static_transform_publisher",
-    #     name="camera_optical_tf",
-    #     arguments=[
-    #         "--roll", str(-pi / 2),
-    #         "--pitch", "0.0",
-    #         "--yaw", str(-pi / 2),
-    #         "--frame-id", "camera_color_optical_frame",
-    #         "--child-frame-id", "camera_link",
-    #     ],
-    # )
 
     return LaunchDescription([
         # Launch arguments

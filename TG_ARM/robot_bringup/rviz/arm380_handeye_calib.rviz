@@ -264,7 +264,7 @@ Visualization Manager:
         Show Robot Visual: true
       Value: true
       Velocity_Scaling_Factor: 1
-    - ArUco dictionary: DICT_4X4_50
+    - ArUco dictionary: DICT_ARUCO_ORIGINAL
       Camera FOV Marker:
         Marker Alpha: 0.30000001192092896
         Marker Size: 1.5
@@ -285,19 +285,18 @@ Visualization Manager:
       eef: Link6
       group: arm
       image_topic: /camera/camera/color/image_raw
-      longest board side (m): 0.200000
-      margin size (px): 2
       marker border (bits): 1
-      marker size (px): 50
-      measured marker size (m): 0.011000
+      marker separation (px): 40
+      marker size (px): 400
+      markers, X: 2
+      markers, Y: 2
+      measured marker size (m): 0.085000
+      measured separation (m): 0.013000
       object: handeye_target
       sensor: camera_color_optical_frame
       sensor_mount_type: 1
       solver: OpenCV/Daniilidis1998
-      square size (px): 80
-      squares, X: 7
-      squares, Y: 5
-      target_type: HandEyeTarget/Charuco
+      target_type: HandEyeTarget/Aruco
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -344,16 +343,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 1.5
+      Distance: 1.2
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.3
+        X: 0.2
         Y: 0
-        Z: 0.3
+        Z: 0.2
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
