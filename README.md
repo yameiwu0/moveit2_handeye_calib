@@ -31,14 +31,24 @@
 建议配置：
 - **操作系统**: Ubuntu 22.04
 - **ROS 版本**: ROS 2 Humble (推荐)
+- **相机要求**: **RGB-D 深度相机**（出厂已标定内参）
+  - ✅ Intel RealSense 系列（D435、D435i、D455 等）
+  - ✅ Orbbec 系列（Astra、Gemini 等）
+  - ✅ Azure Kinect
+  - ❌ 普通 USB 摄像头（需额外标定内参）
 - **依赖软件包**:
   - `moveit2`
   - `moveit_calibration`
   - `tf2_ros`, `geometry_msgs`, `sensor_msgs`
   - `OpenCV` (用于 ArUco/ChArUco 检测，需要 contrib 模块)
   - TG_ARM 机械臂 ROS2 驱动（包含在本仓库）
-  - `realsense2_camera`（如果使用 RealSense 相机）
+  - `realsense2_camera` 或 `orbbec_camera`（根据相机型号选择）
   - `ros2_socketcan` (用于 CAN 总线通信)
+
+> **为什么需要 RGB-D 相机？**
+> - RGB-D 相机出厂已标定内参，驱动自动发布 `camera_info` 话题
+> - 手眼标定插件需要读取 `camera_info` 中的内参矩阵来计算标定板位姿
+> - 普通摄像头需要先用棋盘格标定内参，并手动发布 `camera_info`，较为繁琐
 
 ### 安装依赖：
 
