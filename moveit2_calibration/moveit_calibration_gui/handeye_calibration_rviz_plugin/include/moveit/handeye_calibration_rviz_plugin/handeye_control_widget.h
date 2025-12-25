@@ -172,6 +172,8 @@ private Q_SLOTS:
 
   void clearSamplesBtnClicked(bool clicked);
 
+  void deleteSelectedSampleBtnClicked(bool clicked);
+
   void solveBtnClicked(bool clicked);
 
   void saveCameraPoseBtnClicked(bool clicked);
@@ -222,6 +224,7 @@ private:
 
   // Manual calibration
   QPushButton* take_sample_btn_;
+  QPushButton* delete_sample_btn_;
   QPushButton* reset_sample_btn_;
   QPushButton* solve_btn_;
 

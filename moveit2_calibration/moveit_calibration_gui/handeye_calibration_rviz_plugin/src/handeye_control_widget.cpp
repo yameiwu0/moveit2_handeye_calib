@@ -189,7 +189,13 @@ ControlTabWidget::ControlTabWidget(rclcpp::Node::SharedPtr node, HandEyeCalibrat
   connect(take_sample_btn_, SIGNAL(clicked(bool)), this, SLOT(takeSampleBtnClicked(bool)));
   control_cal_layout->addWidget(take_sample_btn_);
 
-  reset_sample_btn_ = new QPushButton("Clear samples");
+  delete_sample_btn_ = new QPushButton("Delete selected");
+  delete_sample_btn_->setMinimumHeight(35);
+  delete_sample_btn_->setToolTip("Delete the selected sample from the list");
+  connect(delete_sample_btn_, SIGNAL(clicked(bool)), this, SLOT(deleteSelectedSampleBtnClicked(bool)));
+  control_cal_layout->addWidget(delete_sample_btn_);
+
+  reset_sample_btn_ = new QPushButton("Clear all");
   reset_sample_btn_->setMinimumHeight(35);
   connect(reset_sample_btn_, SIGNAL(clicked(bool)), this, SLOT(clearSamplesBtnClicked(bool)));
   control_cal_layout->addWidget(reset_sample_btn_);
@@ -602,6 +608,54 @@ void ControlTabWidget::clearSamplesBtnClicked(bool clicked)
   joint_states_.clear();
   auto_progress_->setMax(0);
   auto_progress_->setValue(0);
+}
+
+void ControlTabWidget::deleteSelectedSampleBtnClicked(bool clicked)
+{
+  // Get selected index from tree view
+  QModelIndexList selected = sample_tree_view_->selectionModel()->selectedIndexes();
+  if (selected.isEmpty())
+  {
+    QMessageBox::warning(this, tr("No Selection"), tr("Please select a sample to delete."));
+    return;
+  }
+
+  // Get the row index of the selected item (top-level item)
+  QModelIndex index = selected.first();
+  // If a child item is selected, get its parent
+  if (index.parent().isValid())
+  {
+    index = index.parent();
+  }
+  int row = index.row();
+
+  // Check if the row is valid
+  if (row < 0 || row >= static_cast<int>(effector_wrt_world_.size()))
+  {
+    QMessageBox::warning(this, tr("Invalid Selection"), tr("Invalid sample selected."));
+    return;
+  }
+
+  // Remove the sample from data vectors
+  effector_wrt_world_.erase(effector_wrt_world_.begin() + row);
+  object_wrt_sensor_.erase(object_wrt_sensor_.begin() + row);
+
+  // Remove from tree view
+  tree_view_model_->removeRow(row);
+
+  // Rename remaining samples to keep numbering consistent
+  for (int i = row; i < tree_view_model_->rowCount(); ++i)
+  {
+    QStandardItem* item = tree_view_model_->item(i);
+    if (item)
+    {
+      item->setText(QString("Sample %1").arg(i + 1));
+    }
+  }
+
+  // Update status
+  QString status_msg = QString("Sample deleted. %1 samples remaining.").arg(effector_wrt_world_.size());
+  calibration_display_->setStatus(rviz_common::properties::StatusProperty::Ok, "Calibration", status_msg);
 }
 
 void ControlTabWidget::saveCameraPoseBtnClicked(bool clicked)
