@@ -143,15 +143,29 @@ colcon build --cmake-args -DOpenCV_DIR=/usr/lib/aarch64-linux-gnu/cmake/opencv4
 
 ### 3. 启动手眼标定系统
 
-本仓库提供了**一键启动所有必要节点**的启动文件，无需单独启动机械臂和相机：
+本仓库提供了**一键启动所有必要节点**的启动文件，无需单独启动机械臂和相机。
+
+#### 使用 RealSense 相机
 
 ```bash
-# ARM620 手眼标定一键启动
+# ARM620 + RealSense 手眼标定
 ros2 launch robot_bringup arm620_handeye_calib.launch.py
 
-# ARM380 手眼标定一键启动
+# ARM380 + RealSense 手眼标定
 ros2 launch robot_bringup arm380_handeye_calib.launch.py
 ```
+
+#### 使用 Orbbec Astra 相机
+
+```bash
+# ARM620 + Orbbec Astra 手眼标定
+ros2 launch robot_bringup arm620_handeye_calib_orbbec.launch.py
+
+# ARM380 + Orbbec Astra 手眼标定
+ros2 launch robot_bringup arm380_handeye_calib_orbbec.launch.py
+```
+
+> **其他相机**：只要相机发布标准 ROS2 图像话题（如 `/camera/color/image_raw`），即可参考现有配置文件进行适配。
 
 这个启动文件会**自动启动以下所有组件**：
 - ✅ 机械臂 CAN 驱动（robot_driver）
@@ -159,12 +173,17 @@ ros2 launch robot_bringup arm380_handeye_calib.launch.py
 - ✅ 机械臂 URDF/TF 发布
 - ✅ 机械臂控制器（robot_control）
 - ✅ MoveIt2 规划与执行接口（含 RViz）
-- ✅ RealSense D435i 相机驱动
+- ✅ 相机驱动（RealSense / Orbbec）
 - ✅ 相机安装位置 TF（eye-in-hand 配置，相机装在末端）
 
 **启动文件位置**：
-- ARM620: [TG_ARM/robot_bringup/launch/arm620_handeye_calib.launch.py](TG_ARM/robot_bringup/launch/arm620_handeye_calib.launch.py)
-- ARM380: [TG_ARM/robot_bringup/launch/arm380_handeye_calib.launch.py](TG_ARM/robot_bringup/launch/arm380_handeye_calib.launch.py)
+
+| 机械臂 | 相机 | 启动文件 |
+|--------|------|----------|
+| ARM620 | RealSense | [arm620_handeye_calib.launch.py](TG_ARM/robot_bringup/launch/arm620_handeye_calib.launch.py) |
+| ARM620 | Orbbec | [arm620_handeye_calib_orbbec.launch.py](TG_ARM/robot_bringup/launch/arm620_handeye_calib_orbbec.launch.py) |
+| ARM380 | RealSense | [arm380_handeye_calib.launch.py](TG_ARM/robot_bringup/launch/arm380_handeye_calib.launch.py) |
+| ARM380 | Orbbec | [arm380_handeye_calib_orbbec.launch.py](TG_ARM/robot_bringup/launch/arm380_handeye_calib_orbbec.launch.py) |
 
 **重要提示**：
 - 使用此启动文件后，**无需再单独启动机械臂驱动或相机节点**
