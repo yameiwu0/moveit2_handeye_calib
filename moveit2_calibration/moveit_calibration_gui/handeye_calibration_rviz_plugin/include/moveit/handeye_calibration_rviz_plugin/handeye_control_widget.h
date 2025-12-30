@@ -53,6 +53,9 @@
 #include <QProgressBar>
 #include <QtConcurrent/QtConcurrent>
 #include <QStandardItemModel>
+#include <QTimer>
+#include <QSpinBox>
+#include <QScrollArea>
 
 // ros
 #include <tf2_eigen/tf2_eigen.h>
@@ -156,6 +159,13 @@ public:
 
   void fillPlanningGroupNameComboBox();
 
+  // Generate calibration poses using spherical sampling
+  std::vector<Eigen::Isometry3d> generateSphericalSamplingPoses(const Eigen::Isometry3d& center_pose, int num_poses);
+
+  // Plan and execute to a specific pose
+  void planToGeneratedPose(int pose_index);
+  void executeToGeneratedPose();
+
 Q_SIGNALS:
 
   void sensorPoseUpdate(double x, double y, double z, double rx, double ry, double rz);
@@ -198,6 +208,13 @@ private Q_SLOTS:
 
   void autoSkipBtnClicked(bool clicked);
 
+  // Full auto calibration
+  void autoCalibrateBtnClicked(bool clicked);
+  void stopAutoCalibrateBtnClicked(bool clicked);
+  void autoCalibrationTimerCallback();
+  void autoCalibrationPlanFinished();
+  void autoCalibrationExecuteFinished();
+
   void planFinished();
 
   void executeFinished();
@@ -234,6 +251,14 @@ private:
   QPushButton* auto_execute_btn_;
   QPushButton* auto_skip_btn_;
 
+  // Full auto calibration (spherical sampling)
+  QPushButton* auto_calibrate_btn_;
+  QPushButton* stop_auto_calibrate_btn_;
+  QSpinBox* num_poses_spinbox_;
+  QLabel* auto_calib_status_label_;
+  QTimer* auto_calib_timer_;
+  ProgressBarWidget* full_auto_progress_;
+
   // Progress of finished joint states for auto calibration
   ProgressBarWidget* auto_progress_;
 
@@ -255,6 +280,24 @@ private:
   std::vector<std::string> joint_names_;
   bool auto_started_;
   PLANNING_RESULT planning_res_;
+
+  // Full auto calibration state
+  bool full_auto_calibration_running_;
+  int full_auto_current_pose_index_;
+  int full_auto_total_poses_;
+  std::vector<Eigen::Isometry3d> generated_poses_;
+  Eigen::Isometry3d initial_eef_pose_;
+
+  // Auto calibration state machine
+  enum AutoCalibState {
+    AUTO_IDLE,
+    AUTO_PLANNING,
+    AUTO_EXECUTING,
+    AUTO_WAITING_STABLE,
+    AUTO_SAMPLING,
+    AUTO_DONE
+  };
+  AutoCalibState auto_calib_state_;
 
   // **************************************************************
   // Ros components

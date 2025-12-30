@@ -109,6 +109,10 @@ ControlTabWidget::ControlTabWidget(rclcpp::Node::SharedPtr node, HandEyeCalibrat
   , camera_robot_pose_(Eigen::Isometry3d::Identity())
   , auto_started_(false)
   , planning_res_(ControlTabWidget::SUCCESS)
+  , full_auto_calibration_running_(false)
+  , full_auto_current_pose_index_(0)
+  , full_auto_total_poses_(15)
+  , auto_calib_state_(AUTO_IDLE)
 {
   QVBoxLayout* layout = new QVBoxLayout();
   this->setLayout(layout);
@@ -138,9 +142,17 @@ ControlTabWidget::ControlTabWidget(rclcpp::Node::SharedPtr node, HandEyeCalibrat
   reprojection_error_label_ = new QLabel("Reprojection error: N/A");
   sample_layout->addWidget(reprojection_error_label_);
 
-  // Settings area
-  QVBoxLayout* layout_right = new QVBoxLayout();
-  calib_layout->addLayout(layout_right);
+  // Settings area - use QScrollArea to make it scrollable
+  QScrollArea* scroll_area = new QScrollArea();
+  scroll_area->setWidgetResizable(true);
+  scroll_area->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+  scroll_area->setFrameShape(QFrame::NoFrame);
+  calib_layout->addWidget(scroll_area);
+
+  QWidget* scroll_content = new QWidget();
+  scroll_area->setWidget(scroll_content);
+  QVBoxLayout* layout_right = new QVBoxLayout(scroll_content);
+  layout_right->setContentsMargins(0, 0, 0, 0);
 
   QGroupBox* setting_group = new QGroupBox("Settings");
   layout_right->addWidget(setting_group);
@@ -230,6 +242,56 @@ ControlTabWidget::ControlTabWidget(rclcpp::Node::SharedPtr node, HandEyeCalibrat
   auto_skip_btn_->setToolTip("Skip the current robot state target");
   connect(auto_skip_btn_, SIGNAL(clicked(bool)), this, SLOT(autoSkipBtnClicked(bool)));
   auto_btns_layout->addWidget(auto_skip_btn_);
+
+  // Full Auto calibration area (spherical sampling)
+  QGroupBox* full_auto_cal_group = new QGroupBox("Full Auto Calibration (Spherical Sampling)");
+  layout_right->addWidget(full_auto_cal_group);
+  QVBoxLayout* full_auto_cal_layout = new QVBoxLayout();
+  full_auto_cal_group->setLayout(full_auto_cal_layout);
+
+  // Number of poses setting
+  QHBoxLayout* poses_setting_layout = new QHBoxLayout();
+  full_auto_cal_layout->addLayout(poses_setting_layout);
+  QLabel* num_poses_label = new QLabel("Number of poses:");
+  poses_setting_layout->addWidget(num_poses_label);
+  num_poses_spinbox_ = new QSpinBox();
+  num_poses_spinbox_->setRange(5, 30);
+  num_poses_spinbox_->setValue(15);
+  num_poses_spinbox_->setToolTip("Number of calibration poses to generate (5-30)");
+  poses_setting_layout->addWidget(num_poses_spinbox_);
+
+  // Status label
+  auto_calib_status_label_ = new QLabel("Status: Ready");
+  auto_calib_status_label_->setStyleSheet("QLabel { color: gray; }");
+  full_auto_cal_layout->addWidget(auto_calib_status_label_);
+
+  // Progress bar for full auto calibration
+  full_auto_progress_ = new ProgressBarWidget(this, 0, 15, 0);
+  full_auto_progress_->name_label_->setText("Auto calibration progress:");
+  full_auto_cal_layout->addWidget(full_auto_progress_);
+
+  // Buttons
+  QHBoxLayout* full_auto_btns_layout = new QHBoxLayout();
+  full_auto_cal_layout->addLayout(full_auto_btns_layout);
+
+  auto_calibrate_btn_ = new QPushButton("Start Auto Calibrate");
+  auto_calibrate_btn_->setMinimumHeight(40);
+  auto_calibrate_btn_->setStyleSheet("QPushButton { background-color: #4CAF50; color: white; font-weight: bold; }");
+  auto_calibrate_btn_->setToolTip("Start full automatic calibration with spherical sampling");
+  connect(auto_calibrate_btn_, SIGNAL(clicked(bool)), this, SLOT(autoCalibrateBtnClicked(bool)));
+  full_auto_btns_layout->addWidget(auto_calibrate_btn_);
+
+  stop_auto_calibrate_btn_ = new QPushButton("Stop");
+  stop_auto_calibrate_btn_->setMinimumHeight(40);
+  stop_auto_calibrate_btn_->setStyleSheet("QPushButton { background-color: #f44336; color: white; font-weight: bold; }");
+  stop_auto_calibrate_btn_->setToolTip("Stop automatic calibration");
+  stop_auto_calibrate_btn_->setEnabled(false);
+  connect(stop_auto_calibrate_btn_, SIGNAL(clicked(bool)), this, SLOT(stopAutoCalibrateBtnClicked(bool)));
+  full_auto_btns_layout->addWidget(stop_auto_calibrate_btn_);
+
+  // Timer for auto calibration state machine
+  auto_calib_timer_ = new QTimer(this);
+  connect(auto_calib_timer_, SIGNAL(timeout()), this, SLOT(autoCalibrationTimerCallback()));
 
   // Initialize handeye solver plugins
   std::vector<std::string> plugins;
@@ -365,6 +427,18 @@ bool ControlTabWidget::takeTransformSamples()
 
     // Get the transform of the object w.r.t the camera
     camera_to_object_tf = tf_buffer_->lookupTransform(frame_names_["sensor"], frame_names_["object"], rclcpp::Time(0));
+
+    // Check if the target transform is recent (within 1 second)
+    // This ensures we only use samples where the target is actually visible
+    rclcpp::Time now = rclcpp::Clock(RCL_ROS_TIME).now();
+    rclcpp::Time tf_time(camera_to_object_tf.header.stamp);
+    double tf_age = (now - tf_time).seconds();
+    if (tf_age > 1.0)
+    {
+      RCLCPP_WARN(node_->get_logger(),
+                  "Target transform is %.2f seconds old. Target may not be visible. Skipping sample.", tf_age);
+      return false;
+    }
 
     // Get the transform of the end-effector w.r.t the robot base
     base_to_eef_tf = tf_buffer_->lookupTransform(frame_names_["base"], frame_names_["eef"], rclcpp::Time(0));
@@ -1122,6 +1196,13 @@ void ControlTabWidget::computeExecution()
 
 void ControlTabWidget::planFinished()
 {
+  // Check if this is for full auto calibration
+  if (full_auto_calibration_running_)
+  {
+    autoCalibrationPlanFinished();
+    return;
+  }
+
   auto_plan_btn_->setEnabled(true);
   switch (planning_res_)
   {
@@ -1155,6 +1236,13 @@ void ControlTabWidget::planFinished()
 
 void ControlTabWidget::executeFinished()
 {
+  // Check if this is for full auto calibration
+  if (full_auto_calibration_running_)
+  {
+    autoCalibrationExecuteFinished();
+    return;
+  }
+
   auto_execute_btn_->setEnabled(true);
   if (planning_res_ == ControlTabWidget::SUCCESS)
   {
@@ -1285,6 +1373,524 @@ std::stringstream ControlTabWidget::generateCalibrationYaml(std::string& from_fr
   ss << "              # --pitch " << r_euler[1] << std::endl;
   ss << "              # --yaw " << r_euler[2] << std::endl;
   return ss;
+}
+
+// ============================================================================
+// Full Auto Calibration Implementation (Spherical Sampling)
+// ============================================================================
+
+std::vector<Eigen::Isometry3d> ControlTabWidget::generateSphericalSamplingPoses(const Eigen::Isometry3d& center_pose,
+                                                                                  int num_poses)
+{
+  std::vector<Eigen::Isometry3d> poses;
+
+  // ============================================================================
+  // Optimal hand-eye calibration sampling strategy:
+  //
+  // Key principles for high-quality calibration:
+  // 1. Keep end-effector position nearly constant (minimize translation)
+  // 2. Maximize rotation angle for each pose (larger rotation = better data)
+  // 3. Maximize angle between rotation axes of different poses
+  // 4. This way, only joints 3,4,5,6 change while end-effector stays in place
+  // ============================================================================
+
+  // Keep position fixed (or with very minimal offset for safety)
+  Eigen::Vector3d fixed_position = center_pose.translation();
+  Eigen::Matrix3d base_rotation = center_pose.rotation();
+
+  // Maximum tilt angle from the base orientation (25-30 degrees is good)
+  const double max_tilt_angle = 28.0 * M_PI / 180.0;
+
+  // Use Fibonacci sphere algorithm to uniformly distribute rotation axes
+  // This maximizes the angle between rotation axes of different poses
+  const double golden_ratio = (1.0 + std::sqrt(5.0)) / 2.0;
+
+  for (int i = 0; i < num_poses; ++i)
+  {
+    // Fibonacci sphere sampling for rotation axis direction
+    // This ensures rotation axes are uniformly distributed on a sphere
+    double theta = 2.0 * M_PI * i / golden_ratio;  // Azimuthal angle
+    double phi = std::acos(1.0 - (2.0 * (i + 0.5)) / num_poses);  // Polar angle (0 to PI)
+
+    // Create rotation axis from spherical coordinates
+    // The axis points in different directions for each pose
+    Eigen::Vector3d rotation_axis;
+    rotation_axis << std::sin(phi) * std::cos(theta),
+                     std::sin(phi) * std::sin(theta),
+                     std::cos(phi);
+    rotation_axis.normalize();
+
+    // Use consistent large rotation angle for all poses
+    // Larger angles provide better calibration data
+    double rot_angle = max_tilt_angle;
+
+    // Apply rotation around the computed axis
+    Eigen::AngleAxisd rotation_variation(rot_angle, rotation_axis);
+    Eigen::Matrix3d new_rotation = base_rotation * rotation_variation.toRotationMatrix();
+
+    // Create the pose with fixed position but varied orientation
+    Eigen::Isometry3d pose = Eigen::Isometry3d::Identity();
+    pose.translation() = fixed_position;  // Position stays the same
+    pose.linear() = new_rotation;         // Only orientation changes
+
+    poses.push_back(pose);
+
+    RCLCPP_DEBUG(node_->get_logger(),
+                 "Generated pose %d: fixed pos(%.3f, %.3f, %.3f), rot_axis(%.2f, %.2f, %.2f), angle=%.1f deg",
+                 i, fixed_position.x(), fixed_position.y(), fixed_position.z(),
+                 rotation_axis.x(), rotation_axis.y(), rotation_axis.z(),
+                 rot_angle * 180.0 / M_PI);
+  }
+
+  RCLCPP_INFO(node_->get_logger(),
+              "Generated %d poses with fixed position and uniformly distributed rotation axes (max angle: %.1f deg)",
+              num_poses, max_tilt_angle * 180.0 / M_PI);
+
+  return poses;
+}
+
+void ControlTabWidget::planToGeneratedPose(int pose_index)
+{
+  planning_res_ = ControlTabWidget::SUCCESS;
+
+  if (!planning_scene_monitor_)
+  {
+    planning_res_ = ControlTabWidget::FAILURE_NO_PSM;
+    return;
+  }
+
+  if (!move_group_)
+  {
+    planning_res_ = ControlTabWidget::FAILURE_NO_MOVE_GROUP;
+    return;
+  }
+
+  if (pose_index < 0 || pose_index >= static_cast<int>(generated_poses_.size()))
+  {
+    planning_res_ = ControlTabWidget::FAILURE_NO_JOINT_STATE;
+    return;
+  }
+
+  // Get current state as start state
+  moveit::core::RobotStatePtr start_state = move_group_->getCurrentState();
+  planning_scene_monitor_->waitForCurrentRobotState(rclcpp::Clock(RCL_ROS_TIME).now(), 0.1);
+  const planning_scene_monitor::LockedPlanningSceneRO& ps =
+      planning_scene_monitor::LockedPlanningSceneRO(planning_scene_monitor_);
+  if (ps)
+    start_state.reset(new moveit::core::RobotState(ps->getCurrentState()));
+
+  // Set target pose
+  const Eigen::Isometry3d& target_pose = generated_poses_[pose_index];
+  geometry_msgs::msg::Pose target_pose_msg = tf2::toMsg(target_pose);
+
+  move_group_->setStartState(*start_state);
+  move_group_->setPoseTarget(target_pose_msg);
+  move_group_->setMaxVelocityScalingFactor(0.3);
+  move_group_->setMaxAccelerationScalingFactor(0.3);
+
+  current_plan_.reset(new moveit::planning_interface::MoveGroupInterface::Plan());
+  planning_res_ = (move_group_->plan(*current_plan_) == moveit::planning_interface::MoveItErrorCode::SUCCESS) ?
+                      ControlTabWidget::SUCCESS :
+                      ControlTabWidget::FAILURE_PLAN_FAILED;
+
+  if (planning_res_ == ControlTabWidget::SUCCESS)
+    RCLCPP_INFO(node_->get_logger(), "Auto calibration: Planning to pose %d succeeded", pose_index);
+  else
+    RCLCPP_WARN(node_->get_logger(), "Auto calibration: Planning to pose %d failed", pose_index);
+}
+
+void ControlTabWidget::executeToGeneratedPose()
+{
+  if (move_group_ && current_plan_)
+  {
+    planning_res_ = (move_group_->execute(*current_plan_) == moveit::planning_interface::MoveItErrorCode::SUCCESS) ?
+                        ControlTabWidget::SUCCESS :
+                        ControlTabWidget::FAILURE_PLAN_FAILED;
+  }
+  else
+  {
+    planning_res_ = ControlTabWidget::FAILURE_PLAN_FAILED;
+  }
+
+  if (planning_res_ == ControlTabWidget::SUCCESS)
+    RCLCPP_INFO(node_->get_logger(), "Auto calibration: Execution succeeded");
+  else
+    RCLCPP_WARN(node_->get_logger(), "Auto calibration: Execution failed");
+}
+
+void ControlTabWidget::autoCalibrateBtnClicked(bool clicked)
+{
+  // Check prerequisites
+  if (frameNamesEmpty())
+  {
+    QMessageBox::warning(this, tr("Error"), tr("Please set all frame names in the Context tab first."));
+    return;
+  }
+
+  if (!move_group_)
+  {
+    QMessageBox::warning(this, tr("Error"), tr("No move group available. Please select a planning group."));
+    return;
+  }
+
+  if (!planning_scene_monitor_)
+  {
+    QMessageBox::warning(this, tr("Error"), tr("No planning scene monitor available."));
+    return;
+  }
+
+  // Clear previous samples
+  effector_wrt_world_.clear();
+  object_wrt_sensor_.clear();
+  tree_view_model_->clear();
+
+  // Get current end-effector pose as the center for spherical sampling
+  planning_scene_monitor_->waitForCurrentRobotState(rclcpp::Clock(RCL_ROS_TIME).now(), 0.5);
+  const planning_scene_monitor::LockedPlanningSceneRO& ps =
+      planning_scene_monitor::LockedPlanningSceneRO(planning_scene_monitor_);
+  if (!ps)
+  {
+    QMessageBox::warning(this, tr("Error"), tr("Could not get current robot state."));
+    return;
+  }
+
+  const moveit::core::RobotState& state = ps->getCurrentState();
+  const std::string& eef_link = move_group_->getEndEffectorLink();
+  initial_eef_pose_ = state.getGlobalLinkTransform(eef_link);
+
+  // Generate sampling poses
+  // Generate more poses than needed to account for failures
+  // We want full_auto_total_poses_ successful samples, so generate 2x candidates
+  full_auto_total_poses_ = num_poses_spinbox_->value();  // This is the TARGET number of successful samples
+  int num_candidate_poses = full_auto_total_poses_ * 2;  // Generate 2x candidates to account for failures
+  generated_poses_ = generateSphericalSamplingPoses(initial_eef_pose_, num_candidate_poses);
+
+  if (generated_poses_.empty())
+  {
+    QMessageBox::warning(this, tr("Error"), tr("Failed to generate calibration poses."));
+    return;
+  }
+
+  // Initialize state machine
+  full_auto_calibration_running_ = true;
+  full_auto_current_pose_index_ = 0;
+  auto_calib_state_ = AUTO_PLANNING;
+
+  // Update UI
+  auto_calibrate_btn_->setEnabled(false);
+  stop_auto_calibrate_btn_->setEnabled(true);
+  num_poses_spinbox_->setEnabled(false);
+  full_auto_progress_->setMax(full_auto_total_poses_);
+  full_auto_progress_->setValue(0);
+  auto_calib_status_label_->setText("Status: Starting auto calibration...");
+  auto_calib_status_label_->setStyleSheet("QLabel { color: blue; }");
+
+  RCLCPP_INFO(node_->get_logger(), "Starting full auto calibration with %d poses", full_auto_total_poses_);
+
+  // ============================================================================
+  // First, take a sample at the initial position (user's starting position)
+  // This position is guaranteed to have the target visible
+  // ============================================================================
+  auto_calib_status_label_->setText("Status: Taking initial sample at starting position...");
+  if (takeTransformSamples())
+  {
+    RCLCPP_INFO(node_->get_logger(), "Auto calibration: Initial sample taken successfully at starting position");
+    full_auto_progress_->setValue(1);
+  }
+  else
+  {
+    RCLCPP_WARN(node_->get_logger(), "Auto calibration: Failed to take initial sample, but continuing...");
+  }
+
+  // Start planning to first generated pose
+  plan_watcher_->setFuture(
+      QtConcurrent::run(this, &ControlTabWidget::planToGeneratedPose, full_auto_current_pose_index_));
+}
+
+void ControlTabWidget::stopAutoCalibrateBtnClicked(bool clicked)
+{
+  RCLCPP_INFO(node_->get_logger(), "Stopping auto calibration");
+
+  full_auto_calibration_running_ = false;
+  auto_calib_state_ = AUTO_IDLE;
+  auto_calib_timer_->stop();
+
+  // Update UI
+  auto_calibrate_btn_->setEnabled(true);
+  stop_auto_calibrate_btn_->setEnabled(false);
+  num_poses_spinbox_->setEnabled(true);
+  auto_calib_status_label_->setText("Status: Stopped by user");
+  auto_calib_status_label_->setStyleSheet("QLabel { color: orange; }");
+
+  // If we have enough samples, try to solve
+  if (effector_wrt_world_.size() >= 5)
+  {
+    auto_calib_status_label_->setText(
+        QString("Status: Stopped. %1 samples collected. Solving...").arg(effector_wrt_world_.size()));
+    if (solveCameraRobotPose())
+    {
+      auto_calib_status_label_->setText(QString("Status: Calibration successful with %1 samples")
+                                            .arg(effector_wrt_world_.size()));
+      auto_calib_status_label_->setStyleSheet("QLabel { color: green; }");
+    }
+  }
+}
+
+void ControlTabWidget::autoCalibrationTimerCallback()
+{
+  // This timer is used for waiting states (e.g., waiting for robot to stabilize)
+  auto_calib_timer_->stop();
+
+  if (!full_auto_calibration_running_)
+    return;
+
+  if (auto_calib_state_ == AUTO_WAITING_STABLE)
+  {
+    // Robot should be stable now, take sample
+    auto_calib_state_ = AUTO_SAMPLING;
+    auto_calib_status_label_->setText(QString("Status: Pose %1 - Checking target visibility...")
+                                          .arg(full_auto_current_pose_index_ + 1));
+
+    // Take the transform sample
+    if (takeTransformSamples())
+    {
+      int num_samples = static_cast<int>(effector_wrt_world_.size());
+      RCLCPP_INFO(node_->get_logger(), "Auto calibration: Sample %d/%d taken at pose %d",
+                  num_samples, full_auto_total_poses_, full_auto_current_pose_index_ + 1);
+
+      // Update progress bar to show actual successful samples
+      full_auto_progress_->setValue(num_samples);
+
+      // If we have enough samples, solve
+      if (num_samples >= 5)
+      {
+        solveCameraRobotPose();
+      }
+
+      // Check if we have reached the target number of successful samples
+      if (num_samples >= full_auto_total_poses_)
+      {
+        // Target reached! We're done
+        auto_calib_state_ = AUTO_DONE;
+        full_auto_calibration_running_ = false;
+
+        auto_calibrate_btn_->setEnabled(true);
+        stop_auto_calibrate_btn_->setEnabled(false);
+        num_poses_spinbox_->setEnabled(true);
+
+        if (solveCameraRobotPose())
+        {
+          auto_calib_status_label_->setText(QString("Status: Done! %1 samples collected successfully").arg(num_samples));
+          auto_calib_status_label_->setStyleSheet("QLabel { color: green; font-weight: bold; }");
+          RCLCPP_INFO(node_->get_logger(), "Auto calibration completed with target %d samples!", num_samples);
+        }
+        else
+        {
+          auto_calib_status_label_->setText(QString("Status: %1 samples collected but solve failed").arg(num_samples));
+          auto_calib_status_label_->setStyleSheet("QLabel { color: orange; }");
+        }
+        return;
+      }
+
+      // Move to next pose
+      full_auto_current_pose_index_++;
+
+      if (full_auto_current_pose_index_ >= static_cast<int>(generated_poses_.size()))
+      {
+        // All candidate poses exhausted
+        auto_calib_state_ = AUTO_DONE;
+        full_auto_calibration_running_ = false;
+
+        auto_calibrate_btn_->setEnabled(true);
+        stop_auto_calibrate_btn_->setEnabled(false);
+        num_poses_spinbox_->setEnabled(true);
+
+        if (num_samples >= 5 && solveCameraRobotPose())
+        {
+          auto_calib_status_label_->setText(QString("Status: Done with %1/%2 samples (poses exhausted)").arg(num_samples).arg(full_auto_total_poses_));
+          auto_calib_status_label_->setStyleSheet("QLabel { color: orange; }");
+        }
+        else
+        {
+          auto_calib_status_label_->setText(QString("Status: Failed - only %1 samples (need %2)").arg(num_samples).arg(full_auto_total_poses_));
+          auto_calib_status_label_->setStyleSheet("QLabel { color: red; }");
+        }
+      }
+      else
+      {
+        // Plan to next pose
+        auto_calib_state_ = AUTO_PLANNING;
+        auto_calib_status_label_->setText(QString("Status: %1/%2 samples, trying pose %3...")
+                                              .arg(num_samples)
+                                              .arg(full_auto_total_poses_)
+                                              .arg(full_auto_current_pose_index_ + 1));
+        plan_watcher_->setFuture(
+            QtConcurrent::run(this, &ControlTabWidget::planToGeneratedPose, full_auto_current_pose_index_));
+      }
+    }
+    else
+    {
+      int num_samples = static_cast<int>(effector_wrt_world_.size());
+      RCLCPP_WARN(node_->get_logger(), "Auto calibration: Target not visible at pose %d, skipping (have %d/%d samples)",
+                  full_auto_current_pose_index_ + 1, num_samples, full_auto_total_poses_);
+
+      // Skip this pose and continue
+      full_auto_current_pose_index_++;
+
+      if (full_auto_current_pose_index_ >= static_cast<int>(generated_poses_.size()))
+      {
+        // All candidate poses exhausted
+        auto_calib_state_ = AUTO_DONE;
+        full_auto_calibration_running_ = false;
+
+        auto_calibrate_btn_->setEnabled(true);
+        stop_auto_calibrate_btn_->setEnabled(false);
+        num_poses_spinbox_->setEnabled(true);
+
+        if (num_samples >= 5 && solveCameraRobotPose())
+        {
+          auto_calib_status_label_->setText(QString("Status: Done with %1/%2 samples (poses exhausted)").arg(num_samples).arg(full_auto_total_poses_));
+          auto_calib_status_label_->setStyleSheet("QLabel { color: orange; }");
+        }
+        else
+        {
+          auto_calib_status_label_->setText(QString("Status: Failed - only %1 samples (need %2)").arg(num_samples).arg(full_auto_total_poses_));
+          auto_calib_status_label_->setStyleSheet("QLabel { color: red; }");
+        }
+      }
+      else
+      {
+        // Try next pose
+        auto_calib_state_ = AUTO_PLANNING;
+        auto_calib_status_label_->setText(QString("Status: %1/%2 samples, skipped pose, trying %3...")
+                                              .arg(num_samples)
+                                              .arg(full_auto_total_poses_)
+                                              .arg(full_auto_current_pose_index_ + 1));
+        plan_watcher_->setFuture(
+            QtConcurrent::run(this, &ControlTabWidget::planToGeneratedPose, full_auto_current_pose_index_));
+      }
+    }
+  }
+}
+
+void ControlTabWidget::autoCalibrationPlanFinished()
+{
+  if (!full_auto_calibration_running_)
+    return;
+
+  int num_samples = static_cast<int>(effector_wrt_world_.size());
+
+  if (planning_res_ == ControlTabWidget::SUCCESS)
+  {
+    // Planning succeeded, execute
+    auto_calib_state_ = AUTO_EXECUTING;
+    auto_calib_status_label_->setText(QString("Status: %1/%2 samples, moving to pose %3...")
+                                          .arg(num_samples)
+                                          .arg(full_auto_total_poses_)
+                                          .arg(full_auto_current_pose_index_ + 1));
+    execution_watcher_->setFuture(QtConcurrent::run(this, &ControlTabWidget::executeToGeneratedPose));
+  }
+  else
+  {
+    // Planning failed, skip to next pose
+    RCLCPP_WARN(node_->get_logger(), "Auto calibration: Skipping pose %d due to planning failure",
+                full_auto_current_pose_index_ + 1);
+
+    full_auto_current_pose_index_++;
+
+    if (full_auto_current_pose_index_ >= static_cast<int>(generated_poses_.size()))
+    {
+      // All candidate poses exhausted
+      auto_calib_state_ = AUTO_DONE;
+      full_auto_calibration_running_ = false;
+
+      auto_calibrate_btn_->setEnabled(true);
+      stop_auto_calibrate_btn_->setEnabled(false);
+      num_poses_spinbox_->setEnabled(true);
+
+      if (num_samples >= 5 && solveCameraRobotPose())
+      {
+        auto_calib_status_label_->setText(QString("Status: Done with %1/%2 samples (poses exhausted)").arg(num_samples).arg(full_auto_total_poses_));
+        auto_calib_status_label_->setStyleSheet("QLabel { color: orange; }");
+      }
+      else
+      {
+        auto_calib_status_label_->setText(QString("Status: Failed - only %1 samples (need %2)").arg(num_samples).arg(full_auto_total_poses_));
+        auto_calib_status_label_->setStyleSheet("QLabel { color: red; }");
+      }
+    }
+    else
+    {
+      // Try next pose
+      auto_calib_status_label_->setText(QString("Status: %1/%2 samples, plan failed, trying pose %3...")
+                                            .arg(num_samples)
+                                            .arg(full_auto_total_poses_)
+                                            .arg(full_auto_current_pose_index_ + 1));
+      plan_watcher_->setFuture(
+          QtConcurrent::run(this, &ControlTabWidget::planToGeneratedPose, full_auto_current_pose_index_));
+    }
+  }
+}
+
+void ControlTabWidget::autoCalibrationExecuteFinished()
+{
+  if (!full_auto_calibration_running_)
+    return;
+
+  int num_samples = static_cast<int>(effector_wrt_world_.size());
+
+  if (planning_res_ == ControlTabWidget::SUCCESS)
+  {
+    // Execution succeeded, wait for robot to stabilize then take sample
+    auto_calib_state_ = AUTO_WAITING_STABLE;
+    auto_calib_status_label_->setText(QString("Status: %1/%2 samples, waiting to stabilize...")
+                                          .arg(num_samples)
+                                          .arg(full_auto_total_poses_));
+
+    // Wait 1 second for robot to stabilize and camera to see the target
+    auto_calib_timer_->start(1000);
+  }
+  else
+  {
+    // Execution failed, skip to next pose
+    RCLCPP_WARN(node_->get_logger(), "Auto calibration: Skipping pose %d due to execution failure",
+                full_auto_current_pose_index_ + 1);
+
+    full_auto_current_pose_index_++;
+
+    if (full_auto_current_pose_index_ >= static_cast<int>(generated_poses_.size()))
+    {
+      // All candidate poses exhausted
+      auto_calib_state_ = AUTO_DONE;
+      full_auto_calibration_running_ = false;
+
+      auto_calibrate_btn_->setEnabled(true);
+      stop_auto_calibrate_btn_->setEnabled(false);
+      num_poses_spinbox_->setEnabled(true);
+
+      if (num_samples >= 5 && solveCameraRobotPose())
+      {
+        auto_calib_status_label_->setText(QString("Status: Done with %1/%2 samples (poses exhausted)").arg(num_samples).arg(full_auto_total_poses_));
+        auto_calib_status_label_->setStyleSheet("QLabel { color: orange; }");
+      }
+      else
+      {
+        auto_calib_status_label_->setText(QString("Status: Failed - only %1 samples (need %2)").arg(num_samples).arg(full_auto_total_poses_));
+        auto_calib_status_label_->setStyleSheet("QLabel { color: red; }");
+      }
+    }
+    else
+    {
+      // Try next pose
+      auto_calib_state_ = AUTO_PLANNING;
+      auto_calib_status_label_->setText(QString("Status: %1/%2 samples, exec failed, trying pose %3...")
+                                            .arg(num_samples)
+                                            .arg(full_auto_total_poses_)
+                                            .arg(full_auto_current_pose_index_ + 1));
+      plan_watcher_->setFuture(
+          QtConcurrent::run(this, &ControlTabWidget::planToGeneratedPose, full_auto_current_pose_index_));
+    }
+  }
 }
 
 }  // namespace moveit_rviz_plugin

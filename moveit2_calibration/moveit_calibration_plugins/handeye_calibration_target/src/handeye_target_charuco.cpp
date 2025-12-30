@@ -202,6 +202,18 @@ bool HandEyeCharucoTarget::detectTargetPose(cv::Mat& image)
     cv::aruco::interpolateCornersCharuco(marker_corners, marker_ids, image, board, charuco_corners, charuco_ids,
                                          camera_matrix_, distortion_coeffs_);
 
+    // Check if we have enough corners for a reliable pose estimation
+    // Require at least 50% of total corners (minimum 4) to be detected
+    int total_corners = (squares_x_ - 1) * (squares_y_ - 1);
+    int min_corners = std::max(4, total_corners / 2);
+    if (static_cast<int>(charuco_ids.size()) < min_corners)
+    {
+      RCLCPP_WARN_STREAM_THROTTLE(LOGGER_CALIBRATION_TARGET, clock, 1,
+                                  "Not enough ChArUco corners detected: " << charuco_ids.size()
+                                  << "/" << total_corners << " (need at least " << min_corners << ")");
+      return false;
+    }
+
     // Estimate aruco board pose
     bool valid = cv::aruco::estimatePoseCharucoBoard(charuco_corners, charuco_ids, board, camera_matrix_,
                                                      distortion_coeffs_, rotation_vect_, translation_vect_);

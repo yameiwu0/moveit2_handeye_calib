@@ -186,6 +186,18 @@ bool HandEyeArucoTarget::detectTargetPose(cv::Mat& image)
     cv::aruco::refineDetectedMarkers(image, board, marker_corners, marker_ids, rejected_corners, camera_matrix_,
                                      distortion_coeffs_);
 
+    // Check if we have enough markers for a reliable pose estimation
+    // Require at least 50% of total markers (minimum 2) to be detected
+    int total_markers = markers_x_ * markers_y_;
+    int min_markers = std::max(2, total_markers / 2);
+    if (static_cast<int>(marker_ids.size()) < min_markers)
+    {
+      RCLCPP_WARN_STREAM_THROTTLE(LOGGER_CALIBRATION_TARGET, clock, LOG_THROTTLE_PERIOD,
+                                  "Not enough ArUco markers detected: " << marker_ids.size()
+                                  << "/" << total_markers << " (need at least " << min_markers << ")");
+      return false;
+    }
+
     // Estimate aruco board pose
     int valid = cv::aruco::estimatePoseBoard(marker_corners, marker_ids, board, camera_matrix_, distortion_coeffs_,
                                              rotation_vect_, translation_vect_);
